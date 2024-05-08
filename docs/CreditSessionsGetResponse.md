@@ -1,0 +1,11 @@
+# CreditSessionsGetResponse
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**sessions** | [CreditSession] | A list of Link sessions for the user. Sessions will be sorted in reverse chronological order. | [optional] 
+**requestId** | **String** | A unique identifier for the request, which can be used for troubleshooting. This identifier, like all Plaid identifiers, is case sensitive. | 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+
