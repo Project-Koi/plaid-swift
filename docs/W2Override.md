@@ -1,0 +1,30 @@
+# W2Override
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**employer** | [**PaystubOverrideEmployer**](PaystubOverrideEmployer.md) |  | [optional] 
+**employee** | [**PaystubOverrideEmployee**](PaystubOverrideEmployee.md) |  | [optional] 
+**taxYear** | **String** | The tax year of the W2 document. | [optional] 
+**employerIdNumber** | **String** | An employee identification number or EIN. | [optional] 
+**wagesTipsOtherComp** | **String** | Wages from tips and other compensation. | [optional] 
+**federalIncomeTaxWithheld** | **String** | Federal income tax withheld for the tax year. | [optional] 
+**socialSecurityWages** | **String** | Wages from social security. | [optional] 
+**socialSecurityTaxWithheld** | **String** | Social security tax withheld for the tax year. | [optional] 
+**medicareWagesAndTips** | **String** | Wages and tips from medicare. | [optional] 
+**medicareTaxWithheld** | **String** | Medicare tax withheld for the tax year. | [optional] 
+**socialSecurityTips** | **String** | Tips from social security. | [optional] 
+**allocatedTips** | **String** | Allocated tips. | [optional] 
+**box9** | **String** | Contents from box 9 on the W2. | [optional] 
+**dependentCareBenefits** | **String** | Dependent care benefits. | [optional] 
+**nonqualifiedPlans** | **String** | Nonqualified plans. | [optional] 
+**box12** | [W2Box12Override] |  | [optional] 
+**statutoryEmployee** | **String** | Statutory employee. | [optional] 
+**retirementPlan** | **String** | Retirement plan. | [optional] 
+**thirdPartySickPay** | **String** | Third party sick pay. | [optional] 
+**other** | **String** | Other. | [optional] 
+**stateAndLocalWages** | [W2StateAndLocalWagesOverride] |  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+
