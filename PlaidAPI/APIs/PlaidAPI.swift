@@ -45,7 +45,7 @@ open class PlaidAPI {
      */
     open class func accountsBalanceGetWithRequestBuilder(accountsBalanceGetRequest: AccountsBalanceGetRequest) -> RequestBuilder<AccountsGetResponse> {
         let localVariablePath = "/accounts/balance/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: accountsBalanceGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -56,7 +56,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<AccountsGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<AccountsGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -94,7 +94,7 @@ open class PlaidAPI {
      */
     open class func accountsGetWithRequestBuilder(accountsGetRequest: AccountsGetRequest) -> RequestBuilder<AccountsGetResponse> {
         let localVariablePath = "/accounts/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: accountsGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -105,7 +105,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<AccountsGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<AccountsGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -139,7 +139,7 @@ open class PlaidAPI {
      */
     open class func applicationGetWithRequestBuilder(applicationGetRequest: ApplicationGetRequest) -> RequestBuilder<ApplicationGetResponse> {
         let localVariablePath = "/application/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: applicationGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -150,7 +150,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<ApplicationGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<ApplicationGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -188,7 +188,7 @@ open class PlaidAPI {
      */
     open class func assetReportAuditCopyCreateWithRequestBuilder(assetReportAuditCopyCreateRequest: AssetReportAuditCopyCreateRequest) -> RequestBuilder<AssetReportAuditCopyCreateResponse> {
         let localVariablePath = "/asset_report/audit_copy/create"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: assetReportAuditCopyCreateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -199,7 +199,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<AssetReportAuditCopyCreateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<AssetReportAuditCopyCreateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -237,7 +237,7 @@ open class PlaidAPI {
      */
     open class func assetReportAuditCopyGetWithRequestBuilder(assetReportAuditCopyGetRequest: AssetReportAuditCopyGetRequest) -> RequestBuilder<AssetReportGetResponse> {
         let localVariablePath = "/asset_report/audit_copy/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: assetReportAuditCopyGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -248,7 +248,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<AssetReportGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<AssetReportGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -286,7 +286,7 @@ open class PlaidAPI {
      */
     open class func assetReportAuditCopyRemoveWithRequestBuilder(assetReportAuditCopyRemoveRequest: AssetReportAuditCopyRemoveRequest) -> RequestBuilder<AssetReportAuditCopyRemoveResponse> {
         let localVariablePath = "/asset_report/audit_copy/remove"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: assetReportAuditCopyRemoveRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -297,7 +297,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<AssetReportAuditCopyRemoveResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<AssetReportAuditCopyRemoveResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -335,7 +335,7 @@ open class PlaidAPI {
      */
     open class func assetReportCreateWithRequestBuilder(assetReportCreateRequest: AssetReportCreateRequest) -> RequestBuilder<AssetReportCreateResponse> {
         let localVariablePath = "/asset_report/create"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: assetReportCreateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -346,7 +346,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<AssetReportCreateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<AssetReportCreateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -384,7 +384,7 @@ open class PlaidAPI {
      */
     open class func assetReportFilterWithRequestBuilder(assetReportFilterRequest: AssetReportFilterRequest) -> RequestBuilder<AssetReportFilterResponse> {
         let localVariablePath = "/asset_report/filter"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: assetReportFilterRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -395,7 +395,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<AssetReportFilterResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<AssetReportFilterResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -433,7 +433,7 @@ open class PlaidAPI {
      */
     open class func assetReportGetWithRequestBuilder(assetReportGetRequest: AssetReportGetRequest) -> RequestBuilder<AssetReportGetResponse> {
         let localVariablePath = "/asset_report/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: assetReportGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -444,7 +444,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<AssetReportGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<AssetReportGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -482,7 +482,7 @@ open class PlaidAPI {
      */
     open class func assetReportPdfGetWithRequestBuilder(assetReportPDFGetRequest: AssetReportPDFGetRequest) -> RequestBuilder<URL> {
         let localVariablePath = "/asset_report/pdf/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: assetReportPDFGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -493,7 +493,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<URL>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<URL>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -531,7 +531,7 @@ open class PlaidAPI {
      */
     open class func assetReportRefreshWithRequestBuilder(assetReportRefreshRequest: AssetReportRefreshRequest) -> RequestBuilder<AssetReportRefreshResponse> {
         let localVariablePath = "/asset_report/refresh"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: assetReportRefreshRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -542,7 +542,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<AssetReportRefreshResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<AssetReportRefreshResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -580,7 +580,7 @@ open class PlaidAPI {
      */
     open class func assetReportRemoveWithRequestBuilder(assetReportRemoveRequest: AssetReportRemoveRequest) -> RequestBuilder<AssetReportRemoveResponse> {
         let localVariablePath = "/asset_report/remove"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: assetReportRemoveRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -591,7 +591,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<AssetReportRemoveResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<AssetReportRemoveResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -629,7 +629,7 @@ open class PlaidAPI {
      */
     open class func authGetWithRequestBuilder(authGetRequest: AuthGetRequest) -> RequestBuilder<AuthGetResponse> {
         let localVariablePath = "/auth/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: authGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -640,7 +640,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<AuthGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<AuthGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -678,7 +678,7 @@ open class PlaidAPI {
      */
     open class func bankTransferBalanceGetWithRequestBuilder(bankTransferBalanceGetRequest: BankTransferBalanceGetRequest) -> RequestBuilder<BankTransferBalanceGetResponse> {
         let localVariablePath = "/bank_transfer/balance/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: bankTransferBalanceGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -689,7 +689,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<BankTransferBalanceGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<BankTransferBalanceGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -727,7 +727,7 @@ open class PlaidAPI {
      */
     open class func bankTransferCancelWithRequestBuilder(bankTransferCancelRequest: BankTransferCancelRequest) -> RequestBuilder<BankTransferCancelResponse> {
         let localVariablePath = "/bank_transfer/cancel"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: bankTransferCancelRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -738,7 +738,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<BankTransferCancelResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<BankTransferCancelResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -776,7 +776,7 @@ open class PlaidAPI {
      */
     open class func bankTransferCreateWithRequestBuilder(bankTransferCreateRequest: BankTransferCreateRequest) -> RequestBuilder<BankTransferCreateResponse> {
         let localVariablePath = "/bank_transfer/create"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: bankTransferCreateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -787,7 +787,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<BankTransferCreateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<BankTransferCreateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -825,7 +825,7 @@ open class PlaidAPI {
      */
     open class func bankTransferEventListWithRequestBuilder(bankTransferEventListRequest: BankTransferEventListRequest) -> RequestBuilder<BankTransferEventListResponse> {
         let localVariablePath = "/bank_transfer/event/list"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: bankTransferEventListRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -836,7 +836,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<BankTransferEventListResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<BankTransferEventListResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -874,7 +874,7 @@ open class PlaidAPI {
      */
     open class func bankTransferEventSyncWithRequestBuilder(bankTransferEventSyncRequest: BankTransferEventSyncRequest) -> RequestBuilder<BankTransferEventSyncResponse> {
         let localVariablePath = "/bank_transfer/event/sync"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: bankTransferEventSyncRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -885,7 +885,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<BankTransferEventSyncResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<BankTransferEventSyncResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -923,7 +923,7 @@ open class PlaidAPI {
      */
     open class func bankTransferGetWithRequestBuilder(bankTransferGetRequest: BankTransferGetRequest) -> RequestBuilder<BankTransferGetResponse> {
         let localVariablePath = "/bank_transfer/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: bankTransferGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -934,7 +934,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<BankTransferGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<BankTransferGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -972,7 +972,7 @@ open class PlaidAPI {
      */
     open class func bankTransferListWithRequestBuilder(bankTransferListRequest: BankTransferListRequest) -> RequestBuilder<BankTransferListResponse> {
         let localVariablePath = "/bank_transfer/list"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: bankTransferListRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -983,7 +983,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<BankTransferListResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<BankTransferListResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -1021,7 +1021,7 @@ open class PlaidAPI {
      */
     open class func bankTransferMigrateAccountWithRequestBuilder(bankTransferMigrateAccountRequest: BankTransferMigrateAccountRequest) -> RequestBuilder<BankTransferMigrateAccountResponse> {
         let localVariablePath = "/bank_transfer/migrate_account"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: bankTransferMigrateAccountRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -1032,7 +1032,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<BankTransferMigrateAccountResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<BankTransferMigrateAccountResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -1070,7 +1070,7 @@ open class PlaidAPI {
      */
     open class func bankTransferSweepGetWithRequestBuilder(bankTransferSweepGetRequest: BankTransferSweepGetRequest) -> RequestBuilder<BankTransferSweepGetResponse> {
         let localVariablePath = "/bank_transfer/sweep/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: bankTransferSweepGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -1081,7 +1081,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<BankTransferSweepGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<BankTransferSweepGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -1119,7 +1119,7 @@ open class PlaidAPI {
      */
     open class func bankTransferSweepListWithRequestBuilder(bankTransferSweepListRequest: BankTransferSweepListRequest) -> RequestBuilder<BankTransferSweepListResponse> {
         let localVariablePath = "/bank_transfer/sweep/list"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: bankTransferSweepListRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -1130,7 +1130,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<BankTransferSweepListResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<BankTransferSweepListResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -1168,7 +1168,7 @@ open class PlaidAPI {
      */
     open class func baseReportCreateWithRequestBuilder(baseReportCreateRequest: BaseReportCreateRequest) -> RequestBuilder<BaseReportCreateResponse> {
         let localVariablePath = "/cra/base_report/create"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: baseReportCreateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -1179,7 +1179,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<BaseReportCreateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<BaseReportCreateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -1217,7 +1217,7 @@ open class PlaidAPI {
      */
     open class func baseReportGetWithRequestBuilder(baseReportGetRequest: BaseReportGetRequest) -> RequestBuilder<BaseReportGetResponse> {
         let localVariablePath = "/cra/base_report/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: baseReportGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -1228,7 +1228,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<BaseReportGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<BaseReportGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -1266,7 +1266,7 @@ open class PlaidAPI {
      */
     open class func beaconAccountRiskEvaluateWithRequestBuilder(beaconAccountRiskEvaluateRequest: BeaconAccountRiskEvaluateRequest) -> RequestBuilder<BeaconAccountRiskEvaluateResponse> {
         let localVariablePath = "/beacon/account_risk/v1/evaluate"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: beaconAccountRiskEvaluateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -1277,7 +1277,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<BeaconAccountRiskEvaluateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<BeaconAccountRiskEvaluateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -1315,7 +1315,7 @@ open class PlaidAPI {
      */
     open class func beaconDuplicateGetWithRequestBuilder(beaconDuplicateGetRequest: BeaconDuplicateGetRequest) -> RequestBuilder<BeaconDuplicateGetResponse> {
         let localVariablePath = "/beacon/duplicate/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: beaconDuplicateGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -1326,7 +1326,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<BeaconDuplicateGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<BeaconDuplicateGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -1364,7 +1364,7 @@ open class PlaidAPI {
      */
     open class func beaconReportCreateWithRequestBuilder(beaconReportCreateRequest: BeaconReportCreateRequest) -> RequestBuilder<BeaconReportCreateResponse> {
         let localVariablePath = "/beacon/report/create"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: beaconReportCreateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -1375,7 +1375,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<BeaconReportCreateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<BeaconReportCreateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -1413,7 +1413,7 @@ open class PlaidAPI {
      */
     open class func beaconReportGetWithRequestBuilder(beaconReportGetRequest: BeaconReportGetRequest) -> RequestBuilder<BeaconReportGetResponse> {
         let localVariablePath = "/beacon/report/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: beaconReportGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -1424,7 +1424,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<BeaconReportGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<BeaconReportGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -1462,7 +1462,7 @@ open class PlaidAPI {
      */
     open class func beaconReportListWithRequestBuilder(beaconReportListRequest: BeaconReportListRequest) -> RequestBuilder<BeaconReportListResponse> {
         let localVariablePath = "/beacon/report/list"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: beaconReportListRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -1473,7 +1473,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<BeaconReportListResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<BeaconReportListResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -1511,7 +1511,7 @@ open class PlaidAPI {
      */
     open class func beaconReportSyndicationGetWithRequestBuilder(beaconReportSyndicationGetRequest: BeaconReportSyndicationGetRequest) -> RequestBuilder<BeaconReportSyndicationGetResponse> {
         let localVariablePath = "/beacon/report_syndication/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: beaconReportSyndicationGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -1522,7 +1522,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<BeaconReportSyndicationGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<BeaconReportSyndicationGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -1560,7 +1560,7 @@ open class PlaidAPI {
      */
     open class func beaconReportSyndicationListWithRequestBuilder(beaconReportSyndicationListRequest: BeaconReportSyndicationListRequest) -> RequestBuilder<BeaconReportSyndicationListResponse> {
         let localVariablePath = "/beacon/report_syndication/list"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: beaconReportSyndicationListRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -1571,7 +1571,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<BeaconReportSyndicationListResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<BeaconReportSyndicationListResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -1609,7 +1609,7 @@ open class PlaidAPI {
      */
     open class func beaconUserCreateWithRequestBuilder(beaconUserCreateRequest: BeaconUserCreateRequest) -> RequestBuilder<BeaconUserCreateResponse> {
         let localVariablePath = "/beacon/user/create"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: beaconUserCreateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -1620,7 +1620,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<BeaconUserCreateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<BeaconUserCreateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -1658,7 +1658,7 @@ open class PlaidAPI {
      */
     open class func beaconUserGetWithRequestBuilder(beaconUserGetRequest: BeaconUserGetRequest) -> RequestBuilder<BeaconUserGetResponse> {
         let localVariablePath = "/beacon/user/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: beaconUserGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -1669,7 +1669,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<BeaconUserGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<BeaconUserGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -1707,7 +1707,7 @@ open class PlaidAPI {
      */
     open class func beaconUserHistoryListWithRequestBuilder(beaconUserHistoryListRequest: BeaconUserHistoryListRequest) -> RequestBuilder<BeaconUserHistoryListResponse> {
         let localVariablePath = "/beacon/user/history/list"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: beaconUserHistoryListRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -1718,7 +1718,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<BeaconUserHistoryListResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<BeaconUserHistoryListResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -1756,7 +1756,7 @@ open class PlaidAPI {
      */
     open class func beaconUserReviewWithRequestBuilder(beaconUserReviewRequest: BeaconUserReviewRequest) -> RequestBuilder<BeaconUserGetResponse> {
         let localVariablePath = "/beacon/user/review"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: beaconUserReviewRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -1767,7 +1767,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<BeaconUserGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<BeaconUserGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -1805,7 +1805,7 @@ open class PlaidAPI {
      */
     open class func beaconUserUpdateWithRequestBuilder(beaconUserUpdateRequest: BeaconUserUpdateRequest) -> RequestBuilder<BeaconUserUpdateResponse> {
         let localVariablePath = "/beacon/user/update"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: beaconUserUpdateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -1816,7 +1816,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<BeaconUserUpdateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<BeaconUserUpdateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -1845,7 +1845,7 @@ open class PlaidAPI {
      */
     open class func categoriesGetWithRequestBuilder(body: AnyCodable) -> RequestBuilder<CategoriesGetResponse> {
         let localVariablePath = "/categories/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: body)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -1856,7 +1856,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<CategoriesGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<CategoriesGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: false)
     }
@@ -1894,7 +1894,7 @@ open class PlaidAPI {
      */
     open class func consumerReportPdfGetWithRequestBuilder(consumerReportPDFGetRequest: ConsumerReportPDFGetRequest) -> RequestBuilder<URL> {
         let localVariablePath = "/consumer_report/pdf/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: consumerReportPDFGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -1905,7 +1905,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<URL>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<URL>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -1943,7 +1943,7 @@ open class PlaidAPI {
      */
     open class func craBankIncomeCreateWithRequestBuilder(craBankIncomeCreateRequest: CraBankIncomeCreateRequest) -> RequestBuilder<CraBankIncomeCreateResponse> {
         let localVariablePath = "/cra/bank_income/create"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: craBankIncomeCreateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -1954,7 +1954,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<CraBankIncomeCreateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<CraBankIncomeCreateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -1992,7 +1992,7 @@ open class PlaidAPI {
      */
     open class func craBankIncomeGetWithRequestBuilder(craBankIncomeGetRequest: CraBankIncomeGetRequest) -> RequestBuilder<CraBankIncomeGetResponse> {
         let localVariablePath = "/cra/bank_income/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: craBankIncomeGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -2003,7 +2003,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<CraBankIncomeGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<CraBankIncomeGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -2041,7 +2041,7 @@ open class PlaidAPI {
      */
     open class func craLoansApplicationsRegisterWithRequestBuilder(craLoansApplicationsRegisterRequest: CraLoansApplicationsRegisterRequest) -> RequestBuilder<CraLoansApplicationsRegisterResponse> {
         let localVariablePath = "/cra/loans/applications/register"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: craLoansApplicationsRegisterRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -2052,7 +2052,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<CraLoansApplicationsRegisterResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<CraLoansApplicationsRegisterResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -2090,7 +2090,7 @@ open class PlaidAPI {
      */
     open class func craLoansRegisterWithRequestBuilder(cRALoansRegisterRequest: CRALoansRegisterRequest) -> RequestBuilder<CraLoansRegisterResponse> {
         let localVariablePath = "/cra/loans/register"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: cRALoansRegisterRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -2101,7 +2101,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<CraLoansRegisterResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<CraLoansRegisterResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -2139,7 +2139,7 @@ open class PlaidAPI {
      */
     open class func craLoansUnregisterWithRequestBuilder(craLoansUnregisterRequest: CraLoansUnregisterRequest) -> RequestBuilder<CraLoanUnregisterResponse> {
         let localVariablePath = "/cra/loans/unregister"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: craLoansUnregisterRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -2150,7 +2150,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<CraLoanUnregisterResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<CraLoanUnregisterResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -2188,7 +2188,7 @@ open class PlaidAPI {
      */
     open class func craLoansUpdateWithRequestBuilder(craLoansUpdateRequest: CraLoansUpdateRequest) -> RequestBuilder<CraLoansUpdateResponse> {
         let localVariablePath = "/cra/loans/update"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: craLoansUpdateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -2199,7 +2199,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<CraLoansUpdateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<CraLoansUpdateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -2237,7 +2237,7 @@ open class PlaidAPI {
      */
     open class func craPartnerInsightsGetWithRequestBuilder(craPartnerInsightsGetRequest: CraPartnerInsightsGetRequest) -> RequestBuilder<CraPartnerInsightsGetResponse> {
         let localVariablePath = "/cra/partner_insights/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: craPartnerInsightsGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -2248,7 +2248,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<CraPartnerInsightsGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<CraPartnerInsightsGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -2288,7 +2288,7 @@ open class PlaidAPI {
     @available(*, deprecated, message: "This operation is deprecated.")
     open class func createPaymentTokenWithRequestBuilder(paymentInitiationPaymentTokenCreateRequest: PaymentInitiationPaymentTokenCreateRequest) -> RequestBuilder<PaymentInitiationPaymentTokenCreateResponse> {
         let localVariablePath = "/payment_initiation/payment/token/create"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: paymentInitiationPaymentTokenCreateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -2299,7 +2299,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<PaymentInitiationPaymentTokenCreateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<PaymentInitiationPaymentTokenCreateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -2337,7 +2337,7 @@ open class PlaidAPI {
      */
     open class func creditAssetReportFreddieMacGetWithRequestBuilder(assetReportFreddieGetRequest: AssetReportFreddieGetRequest) -> RequestBuilder<AssetReportFreddieGetResponse> {
         let localVariablePath = "/credit/asset_report/freddie_mac/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: assetReportFreddieGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -2348,7 +2348,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<AssetReportFreddieGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<AssetReportFreddieGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -2386,7 +2386,7 @@ open class PlaidAPI {
      */
     open class func creditAuditCopyTokenCreateWithRequestBuilder(creditAuditCopyTokenCreateRequest: CreditAuditCopyTokenCreateRequest) -> RequestBuilder<CreditAuditCopyTokenCreateResponse> {
         let localVariablePath = "/credit/audit_copy_token/create"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: creditAuditCopyTokenCreateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -2397,7 +2397,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<CreditAuditCopyTokenCreateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<CreditAuditCopyTokenCreateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -2435,7 +2435,7 @@ open class PlaidAPI {
      */
     open class func creditAuditCopyTokenUpdateWithRequestBuilder(creditAuditCopyTokenUpdateRequest: CreditAuditCopyTokenUpdateRequest) -> RequestBuilder<CreditAuditCopyTokenUpdateResponse> {
         let localVariablePath = "/credit/audit_copy_token/update"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: creditAuditCopyTokenUpdateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -2446,7 +2446,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<CreditAuditCopyTokenUpdateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<CreditAuditCopyTokenUpdateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -2484,7 +2484,7 @@ open class PlaidAPI {
      */
     open class func creditBankEmploymentGetWithRequestBuilder(creditBankEmploymentGetRequest: CreditBankEmploymentGetRequest) -> RequestBuilder<CreditBankEmploymentGetResponse> {
         let localVariablePath = "/beta/credit/v1/bank_employment/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: creditBankEmploymentGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -2495,7 +2495,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<CreditBankEmploymentGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<CreditBankEmploymentGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -2533,7 +2533,7 @@ open class PlaidAPI {
      */
     open class func creditBankIncomeGetWithRequestBuilder(creditBankIncomeGetRequest: CreditBankIncomeGetRequest) -> RequestBuilder<CreditBankIncomeGetResponse> {
         let localVariablePath = "/credit/bank_income/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: creditBankIncomeGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -2544,7 +2544,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<CreditBankIncomeGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<CreditBankIncomeGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -2582,7 +2582,7 @@ open class PlaidAPI {
      */
     open class func creditBankIncomePdfGetWithRequestBuilder(creditBankIncomePDFGetRequest: CreditBankIncomePDFGetRequest) -> RequestBuilder<URL> {
         let localVariablePath = "/credit/bank_income/pdf/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: creditBankIncomePDFGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -2593,7 +2593,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<URL>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<URL>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -2631,7 +2631,7 @@ open class PlaidAPI {
      */
     open class func creditBankIncomeRefreshWithRequestBuilder(creditBankIncomeRefreshRequest: CreditBankIncomeRefreshRequest) -> RequestBuilder<CreditBankIncomeRefreshResponse> {
         let localVariablePath = "/credit/bank_income/refresh"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: creditBankIncomeRefreshRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -2642,7 +2642,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<CreditBankIncomeRefreshResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<CreditBankIncomeRefreshResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -2680,7 +2680,7 @@ open class PlaidAPI {
      */
     open class func creditBankIncomeWebhookUpdateWithRequestBuilder(creditBankIncomeWebhookUpdateRequest: CreditBankIncomeWebhookUpdateRequest) -> RequestBuilder<CreditBankIncomeWebhookUpdateResponse> {
         let localVariablePath = "/credit/bank_income/webhook/update"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: creditBankIncomeWebhookUpdateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -2691,7 +2691,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<CreditBankIncomeWebhookUpdateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<CreditBankIncomeWebhookUpdateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -2729,7 +2729,7 @@ open class PlaidAPI {
      */
     open class func creditBankStatementsUploadsGetWithRequestBuilder(creditBankStatementsUploadsGetRequest: CreditBankStatementsUploadsGetRequest) -> RequestBuilder<CreditBankStatementsUploadsGetResponse> {
         let localVariablePath = "/credit/bank_statements/uploads/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: creditBankStatementsUploadsGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -2740,7 +2740,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<CreditBankStatementsUploadsGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<CreditBankStatementsUploadsGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -2778,7 +2778,7 @@ open class PlaidAPI {
      */
     open class func creditEmploymentGetWithRequestBuilder(creditEmploymentGetRequest: CreditEmploymentGetRequest) -> RequestBuilder<CreditEmploymentGetResponse> {
         let localVariablePath = "/credit/employment/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: creditEmploymentGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -2789,7 +2789,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<CreditEmploymentGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<CreditEmploymentGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -2827,7 +2827,7 @@ open class PlaidAPI {
      */
     open class func creditFreddieMacReportsGetWithRequestBuilder(creditFreddieMacReportsGetRequest: CreditFreddieMacReportsGetRequest) -> RequestBuilder<CreditFreddieMacReportsGetResponse> {
         let localVariablePath = "/credit/freddie_mac/reports/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: creditFreddieMacReportsGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -2838,7 +2838,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<CreditFreddieMacReportsGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<CreditFreddieMacReportsGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -2876,7 +2876,7 @@ open class PlaidAPI {
      */
     open class func creditPayrollIncomeGetWithRequestBuilder(creditPayrollIncomeGetRequest: CreditPayrollIncomeGetRequest) -> RequestBuilder<CreditPayrollIncomeGetResponse> {
         let localVariablePath = "/credit/payroll_income/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: creditPayrollIncomeGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -2887,7 +2887,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<CreditPayrollIncomeGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<CreditPayrollIncomeGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -2925,7 +2925,7 @@ open class PlaidAPI {
      */
     open class func creditPayrollIncomeParsingConfigUpdateWithRequestBuilder(creditPayrollIncomeParsingConfigUpdateRequest: CreditPayrollIncomeParsingConfigUpdateRequest) -> RequestBuilder<CreditPayrollIncomeParsingConfigUpdateResponse> {
         let localVariablePath = "/credit/payroll_income/parsing_config/update"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: creditPayrollIncomeParsingConfigUpdateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -2936,7 +2936,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<CreditPayrollIncomeParsingConfigUpdateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<CreditPayrollIncomeParsingConfigUpdateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -2976,7 +2976,7 @@ open class PlaidAPI {
     @available(*, deprecated, message: "This operation is deprecated.")
     open class func creditPayrollIncomePrecheckWithRequestBuilder(creditPayrollIncomePrecheckRequest: CreditPayrollIncomePrecheckRequest) -> RequestBuilder<CreditPayrollIncomePrecheckResponse> {
         let localVariablePath = "/credit/payroll_income/precheck"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: creditPayrollIncomePrecheckRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -2987,7 +2987,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<CreditPayrollIncomePrecheckResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<CreditPayrollIncomePrecheckResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -3025,7 +3025,7 @@ open class PlaidAPI {
      */
     open class func creditPayrollIncomeRefreshWithRequestBuilder(creditPayrollIncomeRefreshRequest: CreditPayrollIncomeRefreshRequest) -> RequestBuilder<CreditPayrollIncomeRefreshResponse> {
         let localVariablePath = "/credit/payroll_income/refresh"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: creditPayrollIncomeRefreshRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -3036,7 +3036,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<CreditPayrollIncomeRefreshResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<CreditPayrollIncomeRefreshResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -3074,7 +3074,7 @@ open class PlaidAPI {
      */
     open class func creditPayrollIncomeRiskSignalsGetWithRequestBuilder(creditPayrollIncomeRiskSignalsGetRequest: CreditPayrollIncomeRiskSignalsGetRequest) -> RequestBuilder<CreditPayrollIncomeRiskSignalsGetResponse> {
         let localVariablePath = "/credit/payroll_income/risk_signals/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: creditPayrollIncomeRiskSignalsGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -3085,7 +3085,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<CreditPayrollIncomeRiskSignalsGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<CreditPayrollIncomeRiskSignalsGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -3123,7 +3123,7 @@ open class PlaidAPI {
      */
     open class func creditRelayCreateWithRequestBuilder(creditRelayCreateRequest: CreditRelayCreateRequest) -> RequestBuilder<CreditRelayCreateResponse> {
         let localVariablePath = "/credit/relay/create"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: creditRelayCreateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -3134,7 +3134,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<CreditRelayCreateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<CreditRelayCreateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -3172,7 +3172,7 @@ open class PlaidAPI {
      */
     open class func creditRelayGetWithRequestBuilder(creditRelayGetRequest: CreditRelayGetRequest) -> RequestBuilder<AssetReportGetResponse> {
         let localVariablePath = "/credit/relay/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: creditRelayGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -3183,7 +3183,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<AssetReportGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<AssetReportGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -3221,7 +3221,7 @@ open class PlaidAPI {
      */
     open class func creditRelayPdfGetWithRequestBuilder(creditRelayPDFGetRequest: CreditRelayPDFGetRequest) -> RequestBuilder<URL> {
         let localVariablePath = "/credit/relay/pdf/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: creditRelayPDFGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -3232,7 +3232,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<URL>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<URL>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -3270,7 +3270,7 @@ open class PlaidAPI {
      */
     open class func creditRelayRefreshWithRequestBuilder(creditRelayRefreshRequest: CreditRelayRefreshRequest) -> RequestBuilder<CreditRelayRefreshResponse> {
         let localVariablePath = "/credit/relay/refresh"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: creditRelayRefreshRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -3281,7 +3281,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<CreditRelayRefreshResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<CreditRelayRefreshResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -3319,7 +3319,7 @@ open class PlaidAPI {
      */
     open class func creditRelayRemoveWithRequestBuilder(creditRelayRemoveRequest: CreditRelayRemoveRequest) -> RequestBuilder<CreditRelayRemoveResponse> {
         let localVariablePath = "/credit/relay/remove"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: creditRelayRemoveRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -3330,7 +3330,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<CreditRelayRemoveResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<CreditRelayRemoveResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -3368,7 +3368,7 @@ open class PlaidAPI {
      */
     open class func creditReportAuditCopyRemoveWithRequestBuilder(creditAuditCopyTokenRemoveRequest: CreditAuditCopyTokenRemoveRequest) -> RequestBuilder<CreditAuditCopyTokenRemoveResponse> {
         let localVariablePath = "/credit/audit_copy_token/remove"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: creditAuditCopyTokenRemoveRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -3379,7 +3379,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<CreditAuditCopyTokenRemoveResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<CreditAuditCopyTokenRemoveResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -3417,7 +3417,7 @@ open class PlaidAPI {
      */
     open class func creditSessionsGetWithRequestBuilder(creditSessionsGetRequest: CreditSessionsGetRequest) -> RequestBuilder<CreditSessionsGetResponse> {
         let localVariablePath = "/credit/sessions/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: creditSessionsGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -3428,7 +3428,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<CreditSessionsGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<CreditSessionsGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -3466,7 +3466,7 @@ open class PlaidAPI {
      */
     open class func dashboardUserGetWithRequestBuilder(dashboardUserGetRequest: DashboardUserGetRequest) -> RequestBuilder<DashboardUserGetResponse> {
         let localVariablePath = "/dashboard_user/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: dashboardUserGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -3477,7 +3477,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<DashboardUserGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<DashboardUserGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -3515,7 +3515,7 @@ open class PlaidAPI {
      */
     open class func dashboardUserListWithRequestBuilder(dashboardUserListRequest: DashboardUserListRequest) -> RequestBuilder<DashboardUserListResponse> {
         let localVariablePath = "/dashboard_user/list"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: dashboardUserListRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -3526,7 +3526,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<DashboardUserListResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<DashboardUserListResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -3564,7 +3564,7 @@ open class PlaidAPI {
      */
     open class func depositSwitchAltCreateWithRequestBuilder(depositSwitchAltCreateRequest: DepositSwitchAltCreateRequest) -> RequestBuilder<DepositSwitchAltCreateResponse> {
         let localVariablePath = "/deposit_switch/alt/create"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: depositSwitchAltCreateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -3575,7 +3575,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<DepositSwitchAltCreateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<DepositSwitchAltCreateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -3613,7 +3613,7 @@ open class PlaidAPI {
      */
     open class func depositSwitchCreateWithRequestBuilder(depositSwitchCreateRequest: DepositSwitchCreateRequest) -> RequestBuilder<DepositSwitchCreateResponse> {
         let localVariablePath = "/deposit_switch/create"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: depositSwitchCreateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -3624,7 +3624,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<DepositSwitchCreateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<DepositSwitchCreateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -3662,7 +3662,7 @@ open class PlaidAPI {
      */
     open class func depositSwitchGetWithRequestBuilder(depositSwitchGetRequest: DepositSwitchGetRequest) -> RequestBuilder<DepositSwitchGetResponse> {
         let localVariablePath = "/deposit_switch/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: depositSwitchGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -3673,7 +3673,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<DepositSwitchGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<DepositSwitchGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -3711,7 +3711,7 @@ open class PlaidAPI {
      */
     open class func depositSwitchTokenCreateWithRequestBuilder(depositSwitchTokenCreateRequest: DepositSwitchTokenCreateRequest) -> RequestBuilder<DepositSwitchTokenCreateResponse> {
         let localVariablePath = "/deposit_switch/token/create"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: depositSwitchTokenCreateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -3722,7 +3722,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<DepositSwitchTokenCreateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<DepositSwitchTokenCreateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -3760,7 +3760,7 @@ open class PlaidAPI {
      */
     open class func employersSearchWithRequestBuilder(employersSearchRequest: EmployersSearchRequest) -> RequestBuilder<EmployersSearchResponse> {
         let localVariablePath = "/employers/search"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: employersSearchRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -3771,7 +3771,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<EmployersSearchResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<EmployersSearchResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -3811,7 +3811,7 @@ open class PlaidAPI {
     @available(*, deprecated, message: "This operation is deprecated.")
     open class func employmentVerificationGetWithRequestBuilder(employmentVerificationGetRequest: EmploymentVerificationGetRequest) -> RequestBuilder<EmploymentVerificationGetResponse> {
         let localVariablePath = "/employment/verification/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: employmentVerificationGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -3822,7 +3822,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<EmploymentVerificationGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<EmploymentVerificationGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -3860,7 +3860,7 @@ open class PlaidAPI {
      */
     open class func fdxNotificationsWithRequestBuilder(fDXNotification: FDXNotification) -> RequestBuilder<Void> {
         let localVariablePath = "/fdx/notifications"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: fDXNotification)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -3871,7 +3871,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<Void>.Type = PlaidAPIAPI.requestBuilderFactory.getNonDecodableBuilder()
+        let localVariableRequestBuilder: RequestBuilder<Void>.Type = PlaidAPIConfiguration.requestBuilderFactory.getNonDecodableBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -3909,7 +3909,7 @@ open class PlaidAPI {
      */
     open class func identityDocumentsUploadsGetWithRequestBuilder(identityDocumentsUploadsGetRequest: IdentityDocumentsUploadsGetRequest) -> RequestBuilder<IdentityDocumentsUploadsGetResponse> {
         let localVariablePath = "/identity/documents/uploads/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: identityDocumentsUploadsGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -3920,7 +3920,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<IdentityDocumentsUploadsGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<IdentityDocumentsUploadsGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -3958,7 +3958,7 @@ open class PlaidAPI {
      */
     open class func identityGetWithRequestBuilder(identityGetRequest: IdentityGetRequest) -> RequestBuilder<IdentityGetResponse> {
         let localVariablePath = "/identity/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: identityGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -3969,7 +3969,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<IdentityGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<IdentityGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -4007,7 +4007,7 @@ open class PlaidAPI {
      */
     open class func identityMatchWithRequestBuilder(identityMatchRequest: IdentityMatchRequest) -> RequestBuilder<IdentityMatchResponse> {
         let localVariablePath = "/identity/match"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: identityMatchRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -4018,7 +4018,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<IdentityMatchResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<IdentityMatchResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -4056,7 +4056,7 @@ open class PlaidAPI {
      */
     open class func identityRefreshWithRequestBuilder(identityRefreshRequest: IdentityRefreshRequest) -> RequestBuilder<IdentityRefreshResponse> {
         let localVariablePath = "/identity/refresh"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: identityRefreshRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -4067,7 +4067,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<IdentityRefreshResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<IdentityRefreshResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -4105,7 +4105,7 @@ open class PlaidAPI {
      */
     open class func identityVerificationAutofillCreateWithRequestBuilder(identityVerificationAutofillCreateRequest: IdentityVerificationAutofillCreateRequest) -> RequestBuilder<IdentityVerificationAutofillCreateResponse> {
         let localVariablePath = "/identity_verification/autofill/create"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: identityVerificationAutofillCreateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -4116,7 +4116,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<IdentityVerificationAutofillCreateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<IdentityVerificationAutofillCreateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -4154,7 +4154,7 @@ open class PlaidAPI {
      */
     open class func identityVerificationCreateWithRequestBuilder(identityVerificationCreateRequest: IdentityVerificationCreateRequest) -> RequestBuilder<IdentityVerificationCreateResponse> {
         let localVariablePath = "/identity_verification/create"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: identityVerificationCreateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -4165,7 +4165,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<IdentityVerificationCreateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<IdentityVerificationCreateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -4203,7 +4203,7 @@ open class PlaidAPI {
      */
     open class func identityVerificationGetWithRequestBuilder(identityVerificationGetRequest: IdentityVerificationGetRequest) -> RequestBuilder<IdentityVerificationGetResponse> {
         let localVariablePath = "/identity_verification/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: identityVerificationGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -4214,7 +4214,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<IdentityVerificationGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<IdentityVerificationGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -4252,7 +4252,7 @@ open class PlaidAPI {
      */
     open class func identityVerificationListWithRequestBuilder(identityVerificationListRequest: IdentityVerificationListRequest) -> RequestBuilder<IdentityVerificationListResponse> {
         let localVariablePath = "/identity_verification/list"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: identityVerificationListRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -4263,7 +4263,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<IdentityVerificationListResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<IdentityVerificationListResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -4301,7 +4301,7 @@ open class PlaidAPI {
      */
     open class func identityVerificationRetryWithRequestBuilder(identityVerificationRetryRequest: IdentityVerificationRetryRequest) -> RequestBuilder<IdentityVerificationRetryResponse> {
         let localVariablePath = "/identity_verification/retry"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: identityVerificationRetryRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -4312,7 +4312,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<IdentityVerificationRetryResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<IdentityVerificationRetryResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -4352,7 +4352,7 @@ open class PlaidAPI {
     @available(*, deprecated, message: "This operation is deprecated.")
     open class func incomeVerificationCreateWithRequestBuilder(incomeVerificationCreateRequest: IncomeVerificationCreateRequest) -> RequestBuilder<IncomeVerificationCreateResponse> {
         let localVariablePath = "/income/verification/create"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: incomeVerificationCreateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -4363,7 +4363,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<IncomeVerificationCreateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<IncomeVerificationCreateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -4403,7 +4403,7 @@ open class PlaidAPI {
     @available(*, deprecated, message: "This operation is deprecated.")
     open class func incomeVerificationDocumentsDownloadWithRequestBuilder(incomeVerificationDocumentsDownloadRequest: IncomeVerificationDocumentsDownloadRequest) -> RequestBuilder<URL> {
         let localVariablePath = "/income/verification/documents/download"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: incomeVerificationDocumentsDownloadRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -4414,7 +4414,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<URL>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<URL>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -4454,7 +4454,7 @@ open class PlaidAPI {
     @available(*, deprecated, message: "This operation is deprecated.")
     open class func incomeVerificationPaystubsGetWithRequestBuilder(incomeVerificationPaystubsGetRequest: IncomeVerificationPaystubsGetRequest) -> RequestBuilder<IncomeVerificationPaystubsGetResponse> {
         let localVariablePath = "/income/verification/paystubs/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: incomeVerificationPaystubsGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -4465,7 +4465,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<IncomeVerificationPaystubsGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<IncomeVerificationPaystubsGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -4505,7 +4505,7 @@ open class PlaidAPI {
     @available(*, deprecated, message: "This operation is deprecated.")
     open class func incomeVerificationPrecheckWithRequestBuilder(incomeVerificationPrecheckRequest: IncomeVerificationPrecheckRequest) -> RequestBuilder<IncomeVerificationPrecheckResponse> {
         let localVariablePath = "/income/verification/precheck"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: incomeVerificationPrecheckRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -4516,7 +4516,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<IncomeVerificationPrecheckResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<IncomeVerificationPrecheckResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -4556,7 +4556,7 @@ open class PlaidAPI {
     @available(*, deprecated, message: "This operation is deprecated.")
     open class func incomeVerificationTaxformsGetWithRequestBuilder(incomeVerificationTaxformsGetRequest: IncomeVerificationTaxformsGetRequest) -> RequestBuilder<IncomeVerificationTaxformsGetResponse> {
         let localVariablePath = "/income/verification/taxforms/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: incomeVerificationTaxformsGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -4567,7 +4567,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<IncomeVerificationTaxformsGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<IncomeVerificationTaxformsGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -4605,7 +4605,7 @@ open class PlaidAPI {
      */
     open class func institutionsGetWithRequestBuilder(institutionsGetRequest: InstitutionsGetRequest) -> RequestBuilder<InstitutionsGetResponse> {
         let localVariablePath = "/institutions/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: institutionsGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -4616,7 +4616,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<InstitutionsGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<InstitutionsGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -4654,7 +4654,7 @@ open class PlaidAPI {
      */
     open class func institutionsGetByIdWithRequestBuilder(institutionsGetByIdRequest: InstitutionsGetByIdRequest) -> RequestBuilder<InstitutionsGetByIdResponse> {
         let localVariablePath = "/institutions/get_by_id"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: institutionsGetByIdRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -4665,7 +4665,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<InstitutionsGetByIdResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<InstitutionsGetByIdResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -4703,7 +4703,7 @@ open class PlaidAPI {
      */
     open class func institutionsSearchWithRequestBuilder(institutionsSearchRequest: InstitutionsSearchRequest) -> RequestBuilder<InstitutionsSearchResponse> {
         let localVariablePath = "/institutions/search"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: institutionsSearchRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -4714,7 +4714,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<InstitutionsSearchResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<InstitutionsSearchResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -4752,7 +4752,7 @@ open class PlaidAPI {
      */
     open class func investmentsAuthGetWithRequestBuilder(investmentsAuthGetRequest: InvestmentsAuthGetRequest) -> RequestBuilder<InvestmentsAuthGetResponse> {
         let localVariablePath = "/investments/auth/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: investmentsAuthGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -4763,7 +4763,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<InvestmentsAuthGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<InvestmentsAuthGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -4801,7 +4801,7 @@ open class PlaidAPI {
      */
     open class func investmentsHoldingsGetWithRequestBuilder(investmentsHoldingsGetRequest: InvestmentsHoldingsGetRequest) -> RequestBuilder<InvestmentsHoldingsGetResponse> {
         let localVariablePath = "/investments/holdings/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: investmentsHoldingsGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -4812,7 +4812,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<InvestmentsHoldingsGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<InvestmentsHoldingsGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -4850,7 +4850,7 @@ open class PlaidAPI {
      */
     open class func investmentsRefreshWithRequestBuilder(investmentsRefreshRequest: InvestmentsRefreshRequest) -> RequestBuilder<InvestmentsRefreshResponse> {
         let localVariablePath = "/investments/refresh"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: investmentsRefreshRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -4861,7 +4861,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<InvestmentsRefreshResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<InvestmentsRefreshResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -4899,7 +4899,7 @@ open class PlaidAPI {
      */
     open class func investmentsTransactionsGetWithRequestBuilder(investmentsTransactionsGetRequest: InvestmentsTransactionsGetRequest) -> RequestBuilder<InvestmentsTransactionsGetResponse> {
         let localVariablePath = "/investments/transactions/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: investmentsTransactionsGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -4910,7 +4910,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<InvestmentsTransactionsGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<InvestmentsTransactionsGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -4948,7 +4948,7 @@ open class PlaidAPI {
      */
     open class func itemAccessTokenInvalidateWithRequestBuilder(itemAccessTokenInvalidateRequest: ItemAccessTokenInvalidateRequest) -> RequestBuilder<ItemAccessTokenInvalidateResponse> {
         let localVariablePath = "/item/access_token/invalidate"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: itemAccessTokenInvalidateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -4959,7 +4959,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<ItemAccessTokenInvalidateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<ItemAccessTokenInvalidateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -4993,7 +4993,7 @@ open class PlaidAPI {
      */
     open class func itemActivityListWithRequestBuilder(itemActivityListRequest: ItemActivityListRequest) -> RequestBuilder<ItemActivityListResponse> {
         let localVariablePath = "/item/activity/list"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: itemActivityListRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -5004,7 +5004,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<ItemActivityListResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<ItemActivityListResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -5038,7 +5038,7 @@ open class PlaidAPI {
      */
     open class func itemApplicationListWithRequestBuilder(itemApplicationListRequest: ItemApplicationListRequest) -> RequestBuilder<ItemApplicationListResponse> {
         let localVariablePath = "/item/application/list"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: itemApplicationListRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -5049,7 +5049,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<ItemApplicationListResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<ItemApplicationListResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -5083,7 +5083,7 @@ open class PlaidAPI {
      */
     open class func itemApplicationScopesUpdateWithRequestBuilder(itemApplicationScopesUpdateRequest: ItemApplicationScopesUpdateRequest) -> RequestBuilder<ItemApplicationScopesUpdateResponse> {
         let localVariablePath = "/item/application/scopes/update"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: itemApplicationScopesUpdateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -5094,7 +5094,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<ItemApplicationScopesUpdateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<ItemApplicationScopesUpdateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -5132,7 +5132,7 @@ open class PlaidAPI {
      */
     open class func itemApplicationUnlinkWithRequestBuilder(itemApplicationUnlinkRequest: ItemApplicationUnlinkRequest) -> RequestBuilder<ItemApplicationUnlinkResponse> {
         let localVariablePath = "/item/application/unlink"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: itemApplicationUnlinkRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -5143,7 +5143,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<ItemApplicationUnlinkResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<ItemApplicationUnlinkResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -5181,7 +5181,7 @@ open class PlaidAPI {
      */
     open class func itemCreatePublicTokenWithRequestBuilder(itemPublicTokenCreateRequest: ItemPublicTokenCreateRequest) -> RequestBuilder<ItemPublicTokenCreateResponse> {
         let localVariablePath = "/item/public_token/create"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: itemPublicTokenCreateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -5192,7 +5192,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<ItemPublicTokenCreateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<ItemPublicTokenCreateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -5230,7 +5230,7 @@ open class PlaidAPI {
      */
     open class func itemGetWithRequestBuilder(itemGetRequest: ItemGetRequest) -> RequestBuilder<ItemGetResponse> {
         let localVariablePath = "/item/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: itemGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -5241,7 +5241,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<ItemGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<ItemGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -5275,7 +5275,7 @@ open class PlaidAPI {
      */
     open class func itemImportWithRequestBuilder(itemImportRequest: ItemImportRequest) -> RequestBuilder<ItemImportResponse> {
         let localVariablePath = "/item/import"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: itemImportRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -5286,7 +5286,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<ItemImportResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<ItemImportResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -5324,7 +5324,7 @@ open class PlaidAPI {
      */
     open class func itemPublicTokenExchangeWithRequestBuilder(itemPublicTokenExchangeRequest: ItemPublicTokenExchangeRequest) -> RequestBuilder<ItemPublicTokenExchangeResponse> {
         let localVariablePath = "/item/public_token/exchange"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: itemPublicTokenExchangeRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -5335,7 +5335,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<ItemPublicTokenExchangeResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<ItemPublicTokenExchangeResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -5373,7 +5373,7 @@ open class PlaidAPI {
      */
     open class func itemRemoveWithRequestBuilder(itemRemoveRequest: ItemRemoveRequest) -> RequestBuilder<ItemRemoveResponse> {
         let localVariablePath = "/item/remove"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: itemRemoveRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -5384,7 +5384,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<ItemRemoveResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<ItemRemoveResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -5422,7 +5422,7 @@ open class PlaidAPI {
      */
     open class func itemWebhookUpdateWithRequestBuilder(itemWebhookUpdateRequest: ItemWebhookUpdateRequest) -> RequestBuilder<ItemWebhookUpdateResponse> {
         let localVariablePath = "/item/webhook/update"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: itemWebhookUpdateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -5433,7 +5433,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<ItemWebhookUpdateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<ItemWebhookUpdateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -5471,7 +5471,7 @@ open class PlaidAPI {
      */
     open class func liabilitiesGetWithRequestBuilder(liabilitiesGetRequest: LiabilitiesGetRequest) -> RequestBuilder<LiabilitiesGetResponse> {
         let localVariablePath = "/liabilities/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: liabilitiesGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -5482,7 +5482,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<LiabilitiesGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<LiabilitiesGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -5520,7 +5520,7 @@ open class PlaidAPI {
      */
     open class func linkDeliveryCreateWithRequestBuilder(linkDeliveryCreateRequest: LinkDeliveryCreateRequest) -> RequestBuilder<LinkDeliveryCreateResponse> {
         let localVariablePath = "/link_delivery/create"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: linkDeliveryCreateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -5531,7 +5531,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<LinkDeliveryCreateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<LinkDeliveryCreateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -5569,7 +5569,7 @@ open class PlaidAPI {
      */
     open class func linkDeliveryGetWithRequestBuilder(linkDeliveryGetRequest: LinkDeliveryGetRequest) -> RequestBuilder<LinkDeliveryGetResponse> {
         let localVariablePath = "/link_delivery/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: linkDeliveryGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -5580,7 +5580,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<LinkDeliveryGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<LinkDeliveryGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -5618,7 +5618,7 @@ open class PlaidAPI {
      */
     open class func linkOauthCorrelationIdExchangeWithRequestBuilder(linkOAuthCorrelationIdExchangeRequest: LinkOAuthCorrelationIdExchangeRequest) -> RequestBuilder<LinkOAuthCorrelationIdExchangeResponse> {
         let localVariablePath = "/link/oauth/correlation_id/exchange"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: linkOAuthCorrelationIdExchangeRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -5629,7 +5629,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<LinkOAuthCorrelationIdExchangeResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<LinkOAuthCorrelationIdExchangeResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -5667,7 +5667,7 @@ open class PlaidAPI {
      */
     open class func linkProfileEligibilityCheckWithRequestBuilder(linkProfileEligibilityCheckRequest: LinkProfileEligibilityCheckRequest) -> RequestBuilder<LinkProfileEligibilityCheckResponse> {
         let localVariablePath = "/link/profile/eligibility/check"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: linkProfileEligibilityCheckRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -5678,7 +5678,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<LinkProfileEligibilityCheckResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<LinkProfileEligibilityCheckResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -5716,7 +5716,7 @@ open class PlaidAPI {
      */
     open class func linkTokenCreateWithRequestBuilder(linkTokenCreateRequest: LinkTokenCreateRequest) -> RequestBuilder<LinkTokenCreateResponse> {
         let localVariablePath = "/link/token/create"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: linkTokenCreateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -5727,7 +5727,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<LinkTokenCreateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<LinkTokenCreateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -5765,7 +5765,7 @@ open class PlaidAPI {
      */
     open class func linkTokenGetWithRequestBuilder(linkTokenGetRequest: LinkTokenGetRequest) -> RequestBuilder<LinkTokenGetResponse> {
         let localVariablePath = "/link/token/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: linkTokenGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -5776,7 +5776,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<LinkTokenGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<LinkTokenGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -5814,7 +5814,7 @@ open class PlaidAPI {
      */
     open class func partnerCustomerCreateWithRequestBuilder(partnerCustomerCreateRequest: PartnerCustomerCreateRequest) -> RequestBuilder<PartnerCustomerCreateResponse> {
         let localVariablePath = "/partner/customer/create"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: partnerCustomerCreateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -5825,7 +5825,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<PartnerCustomerCreateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<PartnerCustomerCreateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -5863,7 +5863,7 @@ open class PlaidAPI {
      */
     open class func partnerCustomerEnableWithRequestBuilder(partnerCustomerEnableRequest: PartnerCustomerEnableRequest) -> RequestBuilder<PartnerCustomerEnableResponse> {
         let localVariablePath = "/partner/customer/enable"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: partnerCustomerEnableRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -5874,7 +5874,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<PartnerCustomerEnableResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<PartnerCustomerEnableResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -5912,7 +5912,7 @@ open class PlaidAPI {
      */
     open class func partnerCustomerGetWithRequestBuilder(partnerCustomerGetRequest: PartnerCustomerGetRequest) -> RequestBuilder<PartnerCustomerGetResponse> {
         let localVariablePath = "/partner/customer/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: partnerCustomerGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -5923,7 +5923,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<PartnerCustomerGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<PartnerCustomerGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -5961,7 +5961,7 @@ open class PlaidAPI {
      */
     open class func partnerCustomerOauthInstitutionsGetWithRequestBuilder(partnerCustomerOAuthInstitutionsGetRequest: PartnerCustomerOAuthInstitutionsGetRequest) -> RequestBuilder<PartnerCustomerOAuthInstitutionsGetResponse> {
         let localVariablePath = "/partner/customer/oauth_institutions/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: partnerCustomerOAuthInstitutionsGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -5972,7 +5972,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<PartnerCustomerOAuthInstitutionsGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<PartnerCustomerOAuthInstitutionsGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -6010,7 +6010,7 @@ open class PlaidAPI {
      */
     open class func partnerCustomerRemoveWithRequestBuilder(partnerCustomerRemoveRequest: PartnerCustomerRemoveRequest) -> RequestBuilder<PartnerCustomerRemoveResponse> {
         let localVariablePath = "/partner/customer/remove"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: partnerCustomerRemoveRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -6021,7 +6021,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<PartnerCustomerRemoveResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<PartnerCustomerRemoveResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -6059,7 +6059,7 @@ open class PlaidAPI {
      */
     open class func paymentInitiationConsentCreateWithRequestBuilder(paymentInitiationConsentCreateRequest: PaymentInitiationConsentCreateRequest) -> RequestBuilder<PaymentInitiationConsentCreateResponse> {
         let localVariablePath = "/payment_initiation/consent/create"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: paymentInitiationConsentCreateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -6070,7 +6070,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<PaymentInitiationConsentCreateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<PaymentInitiationConsentCreateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -6108,7 +6108,7 @@ open class PlaidAPI {
      */
     open class func paymentInitiationConsentGetWithRequestBuilder(paymentInitiationConsentGetRequest: PaymentInitiationConsentGetRequest) -> RequestBuilder<PaymentInitiationConsentGetResponse> {
         let localVariablePath = "/payment_initiation/consent/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: paymentInitiationConsentGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -6119,7 +6119,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<PaymentInitiationConsentGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<PaymentInitiationConsentGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -6157,7 +6157,7 @@ open class PlaidAPI {
      */
     open class func paymentInitiationConsentPaymentExecuteWithRequestBuilder(paymentInitiationConsentPaymentExecuteRequest: PaymentInitiationConsentPaymentExecuteRequest) -> RequestBuilder<PaymentInitiationConsentPaymentExecuteResponse> {
         let localVariablePath = "/payment_initiation/consent/payment/execute"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: paymentInitiationConsentPaymentExecuteRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -6168,7 +6168,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<PaymentInitiationConsentPaymentExecuteResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<PaymentInitiationConsentPaymentExecuteResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -6206,7 +6206,7 @@ open class PlaidAPI {
      */
     open class func paymentInitiationConsentRevokeWithRequestBuilder(paymentInitiationConsentRevokeRequest: PaymentInitiationConsentRevokeRequest) -> RequestBuilder<PaymentInitiationConsentRevokeResponse> {
         let localVariablePath = "/payment_initiation/consent/revoke"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: paymentInitiationConsentRevokeRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -6217,7 +6217,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<PaymentInitiationConsentRevokeResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<PaymentInitiationConsentRevokeResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -6255,7 +6255,7 @@ open class PlaidAPI {
      */
     open class func paymentInitiationPaymentCreateWithRequestBuilder(paymentInitiationPaymentCreateRequest: PaymentInitiationPaymentCreateRequest) -> RequestBuilder<PaymentInitiationPaymentCreateResponse> {
         let localVariablePath = "/payment_initiation/payment/create"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: paymentInitiationPaymentCreateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -6266,7 +6266,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<PaymentInitiationPaymentCreateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<PaymentInitiationPaymentCreateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -6304,7 +6304,7 @@ open class PlaidAPI {
      */
     open class func paymentInitiationPaymentGetWithRequestBuilder(paymentInitiationPaymentGetRequest: PaymentInitiationPaymentGetRequest) -> RequestBuilder<PaymentInitiationPaymentGetResponse> {
         let localVariablePath = "/payment_initiation/payment/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: paymentInitiationPaymentGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -6315,7 +6315,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<PaymentInitiationPaymentGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<PaymentInitiationPaymentGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -6353,7 +6353,7 @@ open class PlaidAPI {
      */
     open class func paymentInitiationPaymentListWithRequestBuilder(paymentInitiationPaymentListRequest: PaymentInitiationPaymentListRequest) -> RequestBuilder<PaymentInitiationPaymentListResponse> {
         let localVariablePath = "/payment_initiation/payment/list"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: paymentInitiationPaymentListRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -6364,7 +6364,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<PaymentInitiationPaymentListResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<PaymentInitiationPaymentListResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -6402,7 +6402,7 @@ open class PlaidAPI {
      */
     open class func paymentInitiationPaymentReverseWithRequestBuilder(paymentInitiationPaymentReverseRequest: PaymentInitiationPaymentReverseRequest) -> RequestBuilder<PaymentInitiationPaymentReverseResponse> {
         let localVariablePath = "/payment_initiation/payment/reverse"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: paymentInitiationPaymentReverseRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -6413,7 +6413,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<PaymentInitiationPaymentReverseResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<PaymentInitiationPaymentReverseResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -6451,7 +6451,7 @@ open class PlaidAPI {
      */
     open class func paymentInitiationRecipientCreateWithRequestBuilder(paymentInitiationRecipientCreateRequest: PaymentInitiationRecipientCreateRequest) -> RequestBuilder<PaymentInitiationRecipientCreateResponse> {
         let localVariablePath = "/payment_initiation/recipient/create"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: paymentInitiationRecipientCreateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -6462,7 +6462,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<PaymentInitiationRecipientCreateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<PaymentInitiationRecipientCreateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -6500,7 +6500,7 @@ open class PlaidAPI {
      */
     open class func paymentInitiationRecipientGetWithRequestBuilder(paymentInitiationRecipientGetRequest: PaymentInitiationRecipientGetRequest) -> RequestBuilder<PaymentInitiationRecipientGetResponse> {
         let localVariablePath = "/payment_initiation/recipient/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: paymentInitiationRecipientGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -6511,7 +6511,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<PaymentInitiationRecipientGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<PaymentInitiationRecipientGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -6549,7 +6549,7 @@ open class PlaidAPI {
      */
     open class func paymentInitiationRecipientListWithRequestBuilder(paymentInitiationRecipientListRequest: PaymentInitiationRecipientListRequest) -> RequestBuilder<PaymentInitiationRecipientListResponse> {
         let localVariablePath = "/payment_initiation/recipient/list"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: paymentInitiationRecipientListRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -6560,7 +6560,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<PaymentInitiationRecipientListResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<PaymentInitiationRecipientListResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -6600,7 +6600,7 @@ open class PlaidAPI {
     @available(*, deprecated, message: "This operation is deprecated.")
     open class func paymentProfileCreateWithRequestBuilder(paymentProfileCreateRequest: PaymentProfileCreateRequest) -> RequestBuilder<PaymentProfileCreateResponse> {
         let localVariablePath = "/payment_profile/create"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: paymentProfileCreateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -6611,7 +6611,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<PaymentProfileCreateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<PaymentProfileCreateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -6651,7 +6651,7 @@ open class PlaidAPI {
     @available(*, deprecated, message: "This operation is deprecated.")
     open class func paymentProfileGetWithRequestBuilder(paymentProfileGetRequest: PaymentProfileGetRequest) -> RequestBuilder<PaymentProfileGetResponse> {
         let localVariablePath = "/payment_profile/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: paymentProfileGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -6662,7 +6662,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<PaymentProfileGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<PaymentProfileGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -6702,7 +6702,7 @@ open class PlaidAPI {
     @available(*, deprecated, message: "This operation is deprecated.")
     open class func paymentProfileRemoveWithRequestBuilder(paymentProfileRemoveRequest: PaymentProfileRemoveRequest) -> RequestBuilder<PaymentProfileRemoveResponse> {
         let localVariablePath = "/payment_profile/remove"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: paymentProfileRemoveRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -6713,7 +6713,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<PaymentProfileRemoveResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<PaymentProfileRemoveResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -6751,7 +6751,7 @@ open class PlaidAPI {
      */
     open class func processorAccountGetWithRequestBuilder(processorAccountGetRequest: ProcessorAccountGetRequest) -> RequestBuilder<ProcessorAccountGetResponse> {
         let localVariablePath = "/processor/account/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: processorAccountGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -6762,7 +6762,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<ProcessorAccountGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<ProcessorAccountGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -6800,7 +6800,7 @@ open class PlaidAPI {
      */
     open class func processorApexProcessorTokenCreateWithRequestBuilder(processorApexProcessorTokenCreateRequest: ProcessorApexProcessorTokenCreateRequest) -> RequestBuilder<ProcessorTokenCreateResponse> {
         let localVariablePath = "/processor/apex/processor_token/create"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: processorApexProcessorTokenCreateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -6811,7 +6811,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<ProcessorTokenCreateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<ProcessorTokenCreateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -6849,7 +6849,7 @@ open class PlaidAPI {
      */
     open class func processorAuthGetWithRequestBuilder(processorAuthGetRequest: ProcessorAuthGetRequest) -> RequestBuilder<ProcessorAuthGetResponse> {
         let localVariablePath = "/processor/auth/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: processorAuthGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -6860,7 +6860,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<ProcessorAuthGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<ProcessorAuthGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -6898,7 +6898,7 @@ open class PlaidAPI {
      */
     open class func processorBalanceGetWithRequestBuilder(processorBalanceGetRequest: ProcessorBalanceGetRequest) -> RequestBuilder<ProcessorBalanceGetResponse> {
         let localVariablePath = "/processor/balance/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: processorBalanceGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -6909,7 +6909,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<ProcessorBalanceGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<ProcessorBalanceGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -6947,7 +6947,7 @@ open class PlaidAPI {
      */
     open class func processorBankTransferCreateWithRequestBuilder(processorBankTransferCreateRequest: ProcessorBankTransferCreateRequest) -> RequestBuilder<ProcessorBankTransferCreateResponse> {
         let localVariablePath = "/processor/bank_transfer/create"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: processorBankTransferCreateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -6958,7 +6958,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<ProcessorBankTransferCreateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<ProcessorBankTransferCreateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -6996,7 +6996,7 @@ open class PlaidAPI {
      */
     open class func processorIdentityGetWithRequestBuilder(processorIdentityGetRequest: ProcessorIdentityGetRequest) -> RequestBuilder<ProcessorIdentityGetResponse> {
         let localVariablePath = "/processor/identity/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: processorIdentityGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -7007,7 +7007,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<ProcessorIdentityGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<ProcessorIdentityGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -7045,7 +7045,7 @@ open class PlaidAPI {
      */
     open class func processorIdentityMatchWithRequestBuilder(processorIdentityMatchRequest: ProcessorIdentityMatchRequest) -> RequestBuilder<ProcessorIdentityMatchResponse> {
         let localVariablePath = "/processor/identity/match"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: processorIdentityMatchRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -7056,7 +7056,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<ProcessorIdentityMatchResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<ProcessorIdentityMatchResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -7094,7 +7094,7 @@ open class PlaidAPI {
      */
     open class func processorLiabilitiesGetWithRequestBuilder(processorLiabilitiesGetRequest: ProcessorLiabilitiesGetRequest) -> RequestBuilder<ProcessorLiabilitiesGetResponse> {
         let localVariablePath = "/processor/liabilities/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: processorLiabilitiesGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -7105,7 +7105,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<ProcessorLiabilitiesGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<ProcessorLiabilitiesGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -7143,7 +7143,7 @@ open class PlaidAPI {
      */
     open class func processorSignalDecisionReportWithRequestBuilder(processorSignalDecisionReportRequest: ProcessorSignalDecisionReportRequest) -> RequestBuilder<ProcessorSignalDecisionReportResponse> {
         let localVariablePath = "/processor/signal/decision/report"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: processorSignalDecisionReportRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -7154,7 +7154,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<ProcessorSignalDecisionReportResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<ProcessorSignalDecisionReportResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -7192,7 +7192,7 @@ open class PlaidAPI {
      */
     open class func processorSignalEvaluateWithRequestBuilder(processorSignalEvaluateRequest: ProcessorSignalEvaluateRequest) -> RequestBuilder<ProcessorSignalEvaluateResponse> {
         let localVariablePath = "/processor/signal/evaluate"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: processorSignalEvaluateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -7203,7 +7203,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<ProcessorSignalEvaluateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<ProcessorSignalEvaluateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -7241,7 +7241,7 @@ open class PlaidAPI {
      */
     open class func processorSignalPrepareWithRequestBuilder(processorSignalPrepareRequest: ProcessorSignalPrepareRequest) -> RequestBuilder<ProcessorSignalPrepareResponse> {
         let localVariablePath = "/processor/signal/prepare"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: processorSignalPrepareRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -7252,7 +7252,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<ProcessorSignalPrepareResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<ProcessorSignalPrepareResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -7290,7 +7290,7 @@ open class PlaidAPI {
      */
     open class func processorSignalReturnReportWithRequestBuilder(processorSignalReturnReportRequest: ProcessorSignalReturnReportRequest) -> RequestBuilder<ProcessorSignalReturnReportResponse> {
         let localVariablePath = "/processor/signal/return/report"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: processorSignalReturnReportRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -7301,7 +7301,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<ProcessorSignalReturnReportResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<ProcessorSignalReturnReportResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -7339,7 +7339,7 @@ open class PlaidAPI {
      */
     open class func processorStripeBankAccountTokenCreateWithRequestBuilder(processorStripeBankAccountTokenCreateRequest: ProcessorStripeBankAccountTokenCreateRequest) -> RequestBuilder<ProcessorStripeBankAccountTokenCreateResponse> {
         let localVariablePath = "/processor/stripe/bank_account_token/create"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: processorStripeBankAccountTokenCreateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -7350,7 +7350,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<ProcessorStripeBankAccountTokenCreateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<ProcessorStripeBankAccountTokenCreateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -7388,7 +7388,7 @@ open class PlaidAPI {
      */
     open class func processorTokenCreateWithRequestBuilder(processorTokenCreateRequest: ProcessorTokenCreateRequest) -> RequestBuilder<ProcessorTokenCreateResponse> {
         let localVariablePath = "/processor/token/create"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: processorTokenCreateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -7399,7 +7399,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<ProcessorTokenCreateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<ProcessorTokenCreateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -7437,7 +7437,7 @@ open class PlaidAPI {
      */
     open class func processorTokenPermissionsGetWithRequestBuilder(processorTokenPermissionsGetRequest: ProcessorTokenPermissionsGetRequest) -> RequestBuilder<ProcessorTokenPermissionsGetResponse> {
         let localVariablePath = "/processor/token/permissions/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: processorTokenPermissionsGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -7448,7 +7448,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<ProcessorTokenPermissionsGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<ProcessorTokenPermissionsGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -7486,7 +7486,7 @@ open class PlaidAPI {
      */
     open class func processorTokenPermissionsSetWithRequestBuilder(processorTokenPermissionsSetRequest: ProcessorTokenPermissionsSetRequest) -> RequestBuilder<ProcessorTokenPermissionsSetResponse> {
         let localVariablePath = "/processor/token/permissions/set"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: processorTokenPermissionsSetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -7497,7 +7497,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<ProcessorTokenPermissionsSetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<ProcessorTokenPermissionsSetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -7535,7 +7535,7 @@ open class PlaidAPI {
      */
     open class func processorTokenWebhookUpdateWithRequestBuilder(processorTokenWebhookUpdateRequest: ProcessorTokenWebhookUpdateRequest) -> RequestBuilder<ProcessorTokenWebhookUpdateResponse> {
         let localVariablePath = "/processor/token/webhook/update"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: processorTokenWebhookUpdateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -7546,7 +7546,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<ProcessorTokenWebhookUpdateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<ProcessorTokenWebhookUpdateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -7584,7 +7584,7 @@ open class PlaidAPI {
      */
     open class func processorTransactionsGetWithRequestBuilder(processorTransactionsGetRequest: ProcessorTransactionsGetRequest) -> RequestBuilder<ProcessorTransactionsGetResponse> {
         let localVariablePath = "/processor/transactions/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: processorTransactionsGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -7595,7 +7595,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<ProcessorTransactionsGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<ProcessorTransactionsGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -7633,7 +7633,7 @@ open class PlaidAPI {
      */
     open class func processorTransactionsRecurringGetWithRequestBuilder(processorTransactionsRecurringGetRequest: ProcessorTransactionsRecurringGetRequest) -> RequestBuilder<ProcessorTransactionsRecurringGetResponse> {
         let localVariablePath = "/processor/transactions/recurring/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: processorTransactionsRecurringGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -7644,7 +7644,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<ProcessorTransactionsRecurringGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<ProcessorTransactionsRecurringGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -7682,7 +7682,7 @@ open class PlaidAPI {
      */
     open class func processorTransactionsRefreshWithRequestBuilder(processorTransactionsRefreshRequest: ProcessorTransactionsRefreshRequest) -> RequestBuilder<ProcessorTransactionsRefreshResponse> {
         let localVariablePath = "/processor/transactions/refresh"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: processorTransactionsRefreshRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -7693,7 +7693,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<ProcessorTransactionsRefreshResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<ProcessorTransactionsRefreshResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -7731,7 +7731,7 @@ open class PlaidAPI {
      */
     open class func processorTransactionsSyncWithRequestBuilder(processorTransactionsSyncRequest: ProcessorTransactionsSyncRequest) -> RequestBuilder<ProcessorTransactionsSyncResponse> {
         let localVariablePath = "/processor/transactions/sync"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: processorTransactionsSyncRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -7742,7 +7742,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<ProcessorTransactionsSyncResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<ProcessorTransactionsSyncResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -7780,7 +7780,7 @@ open class PlaidAPI {
      */
     open class func profileGetWithRequestBuilder(profileGetRequest: ProfileGetRequest) -> RequestBuilder<ProfileGetResponse> {
         let localVariablePath = "/profile/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: profileGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -7791,7 +7791,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<ProfileGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<ProfileGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -7829,7 +7829,7 @@ open class PlaidAPI {
      */
     open class func sandboxBankIncomeFireWebhookWithRequestBuilder(sandboxBankIncomeFireWebhookRequest: SandboxBankIncomeFireWebhookRequest) -> RequestBuilder<SandboxBankIncomeFireWebhookResponse> {
         let localVariablePath = "/sandbox/bank_income/fire_webhook"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: sandboxBankIncomeFireWebhookRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -7840,7 +7840,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<SandboxBankIncomeFireWebhookResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<SandboxBankIncomeFireWebhookResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -7878,7 +7878,7 @@ open class PlaidAPI {
      */
     open class func sandboxBankTransferFireWebhookWithRequestBuilder(sandboxBankTransferFireWebhookRequest: SandboxBankTransferFireWebhookRequest) -> RequestBuilder<SandboxBankTransferFireWebhookResponse> {
         let localVariablePath = "/sandbox/bank_transfer/fire_webhook"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: sandboxBankTransferFireWebhookRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -7889,7 +7889,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<SandboxBankTransferFireWebhookResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<SandboxBankTransferFireWebhookResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -7927,7 +7927,7 @@ open class PlaidAPI {
      */
     open class func sandboxBankTransferSimulateWithRequestBuilder(sandboxBankTransferSimulateRequest: SandboxBankTransferSimulateRequest) -> RequestBuilder<SandboxBankTransferSimulateResponse> {
         let localVariablePath = "/sandbox/bank_transfer/simulate"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: sandboxBankTransferSimulateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -7938,7 +7938,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<SandboxBankTransferSimulateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<SandboxBankTransferSimulateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -7976,7 +7976,7 @@ open class PlaidAPI {
      */
     open class func sandboxIncomeFireWebhookWithRequestBuilder(sandboxIncomeFireWebhookRequest: SandboxIncomeFireWebhookRequest) -> RequestBuilder<SandboxIncomeFireWebhookResponse> {
         let localVariablePath = "/sandbox/income/fire_webhook"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: sandboxIncomeFireWebhookRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -7987,7 +7987,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<SandboxIncomeFireWebhookResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<SandboxIncomeFireWebhookResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -8025,7 +8025,7 @@ open class PlaidAPI {
      */
     open class func sandboxItemFireWebhookWithRequestBuilder(sandboxItemFireWebhookRequest: SandboxItemFireWebhookRequest) -> RequestBuilder<SandboxItemFireWebhookResponse> {
         let localVariablePath = "/sandbox/item/fire_webhook"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: sandboxItemFireWebhookRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -8036,7 +8036,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<SandboxItemFireWebhookResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<SandboxItemFireWebhookResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -8074,7 +8074,7 @@ open class PlaidAPI {
      */
     open class func sandboxItemResetLoginWithRequestBuilder(sandboxItemResetLoginRequest: SandboxItemResetLoginRequest) -> RequestBuilder<SandboxItemResetLoginResponse> {
         let localVariablePath = "/sandbox/item/reset_login"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: sandboxItemResetLoginRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -8085,7 +8085,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<SandboxItemResetLoginResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<SandboxItemResetLoginResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -8123,7 +8123,7 @@ open class PlaidAPI {
      */
     open class func sandboxItemSetVerificationStatusWithRequestBuilder(sandboxItemSetVerificationStatusRequest: SandboxItemSetVerificationStatusRequest) -> RequestBuilder<SandboxItemSetVerificationStatusResponse> {
         let localVariablePath = "/sandbox/item/set_verification_status"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: sandboxItemSetVerificationStatusRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -8134,7 +8134,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<SandboxItemSetVerificationStatusResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<SandboxItemSetVerificationStatusResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -8168,7 +8168,7 @@ open class PlaidAPI {
      */
     open class func sandboxOauthSelectAccountsWithRequestBuilder(sandboxOauthSelectAccountsRequest: SandboxOauthSelectAccountsRequest) -> RequestBuilder<[String: AnyCodable]> {
         let localVariablePath = "/sandbox/oauth/select_accounts"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: sandboxOauthSelectAccountsRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -8179,7 +8179,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<[String: AnyCodable]>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<[String: AnyCodable]>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -8219,7 +8219,7 @@ open class PlaidAPI {
     @available(*, deprecated, message: "This operation is deprecated.")
     open class func sandboxPaymentProfileResetLoginWithRequestBuilder(sandboxPaymentProfileResetLoginRequest: SandboxPaymentProfileResetLoginRequest) -> RequestBuilder<SandboxPaymentProfileResetLoginResponse> {
         let localVariablePath = "/sandbox/payment_profile/reset_login"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: sandboxPaymentProfileResetLoginRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -8230,7 +8230,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<SandboxPaymentProfileResetLoginResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<SandboxPaymentProfileResetLoginResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -8268,7 +8268,7 @@ open class PlaidAPI {
      */
     open class func sandboxProcessorTokenCreateWithRequestBuilder(sandboxProcessorTokenCreateRequest: SandboxProcessorTokenCreateRequest) -> RequestBuilder<SandboxProcessorTokenCreateResponse> {
         let localVariablePath = "/sandbox/processor_token/create"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: sandboxProcessorTokenCreateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -8279,7 +8279,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<SandboxProcessorTokenCreateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<SandboxProcessorTokenCreateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -8317,7 +8317,7 @@ open class PlaidAPI {
      */
     open class func sandboxPublicTokenCreateWithRequestBuilder(sandboxPublicTokenCreateRequest: SandboxPublicTokenCreateRequest) -> RequestBuilder<SandboxPublicTokenCreateResponse> {
         let localVariablePath = "/sandbox/public_token/create"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: sandboxPublicTokenCreateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -8328,7 +8328,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<SandboxPublicTokenCreateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<SandboxPublicTokenCreateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -8366,7 +8366,7 @@ open class PlaidAPI {
      */
     open class func sandboxTransferFireWebhookWithRequestBuilder(sandboxTransferFireWebhookRequest: SandboxTransferFireWebhookRequest) -> RequestBuilder<SandboxTransferFireWebhookResponse> {
         let localVariablePath = "/sandbox/transfer/fire_webhook"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: sandboxTransferFireWebhookRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -8377,7 +8377,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<SandboxTransferFireWebhookResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<SandboxTransferFireWebhookResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -8415,7 +8415,7 @@ open class PlaidAPI {
      */
     open class func sandboxTransferLedgerDepositSimulateWithRequestBuilder(sandboxTransferLedgerDepositSimulateRequest: SandboxTransferLedgerDepositSimulateRequest) -> RequestBuilder<SandboxTransferLedgerDepositSimulateResponse> {
         let localVariablePath = "/sandbox/transfer/ledger/deposit/simulate"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: sandboxTransferLedgerDepositSimulateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -8426,7 +8426,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<SandboxTransferLedgerDepositSimulateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<SandboxTransferLedgerDepositSimulateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -8464,7 +8464,7 @@ open class PlaidAPI {
      */
     open class func sandboxTransferLedgerSimulateAvailableWithRequestBuilder(sandboxTransferLedgerSimulateAvailableRequest: SandboxTransferLedgerSimulateAvailableRequest) -> RequestBuilder<SandboxTransferLedgerSimulateAvailableResponse> {
         let localVariablePath = "/sandbox/transfer/ledger/simulate_available"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: sandboxTransferLedgerSimulateAvailableRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -8475,7 +8475,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<SandboxTransferLedgerSimulateAvailableResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<SandboxTransferLedgerSimulateAvailableResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -8513,7 +8513,7 @@ open class PlaidAPI {
      */
     open class func sandboxTransferLedgerWithdrawSimulateWithRequestBuilder(sandboxTransferLedgerWithdrawSimulateRequest: SandboxTransferLedgerWithdrawSimulateRequest) -> RequestBuilder<SandboxTransferLedgerWithdrawSimulateResponse> {
         let localVariablePath = "/sandbox/transfer/ledger/withdraw/simulate"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: sandboxTransferLedgerWithdrawSimulateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -8524,7 +8524,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<SandboxTransferLedgerWithdrawSimulateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<SandboxTransferLedgerWithdrawSimulateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -8562,7 +8562,7 @@ open class PlaidAPI {
      */
     open class func sandboxTransferRefundSimulateWithRequestBuilder(sandboxTransferRefundSimulateRequest: SandboxTransferRefundSimulateRequest) -> RequestBuilder<SandboxTransferRefundSimulateResponse> {
         let localVariablePath = "/sandbox/transfer/refund/simulate"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: sandboxTransferRefundSimulateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -8573,7 +8573,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<SandboxTransferRefundSimulateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<SandboxTransferRefundSimulateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -8611,7 +8611,7 @@ open class PlaidAPI {
      */
     open class func sandboxTransferRepaymentSimulateWithRequestBuilder(sandboxTransferRepaymentSimulateRequest: SandboxTransferRepaymentSimulateRequest) -> RequestBuilder<SandboxTransferRepaymentSimulateResponse> {
         let localVariablePath = "/sandbox/transfer/repayment/simulate"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: sandboxTransferRepaymentSimulateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -8622,7 +8622,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<SandboxTransferRepaymentSimulateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<SandboxTransferRepaymentSimulateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -8660,7 +8660,7 @@ open class PlaidAPI {
      */
     open class func sandboxTransferSimulateWithRequestBuilder(sandboxTransferSimulateRequest: SandboxTransferSimulateRequest) -> RequestBuilder<SandboxTransferSimulateResponse> {
         let localVariablePath = "/sandbox/transfer/simulate"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: sandboxTransferSimulateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -8671,7 +8671,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<SandboxTransferSimulateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<SandboxTransferSimulateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -8709,7 +8709,7 @@ open class PlaidAPI {
      */
     open class func sandboxTransferSweepSimulateWithRequestBuilder(sandboxTransferSweepSimulateRequest: SandboxTransferSweepSimulateRequest) -> RequestBuilder<SandboxTransferSweepSimulateResponse> {
         let localVariablePath = "/sandbox/transfer/sweep/simulate"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: sandboxTransferSweepSimulateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -8720,7 +8720,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<SandboxTransferSweepSimulateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<SandboxTransferSweepSimulateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -8758,7 +8758,7 @@ open class PlaidAPI {
      */
     open class func sandboxTransferTestClockAdvanceWithRequestBuilder(sandboxTransferTestClockAdvanceRequest: SandboxTransferTestClockAdvanceRequest) -> RequestBuilder<SandboxTransferTestClockAdvanceResponse> {
         let localVariablePath = "/sandbox/transfer/test_clock/advance"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: sandboxTransferTestClockAdvanceRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -8769,7 +8769,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<SandboxTransferTestClockAdvanceResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<SandboxTransferTestClockAdvanceResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -8807,7 +8807,7 @@ open class PlaidAPI {
      */
     open class func sandboxTransferTestClockCreateWithRequestBuilder(sandboxTransferTestClockCreateRequest: SandboxTransferTestClockCreateRequest) -> RequestBuilder<SandboxTransferTestClockCreateResponse> {
         let localVariablePath = "/sandbox/transfer/test_clock/create"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: sandboxTransferTestClockCreateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -8818,7 +8818,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<SandboxTransferTestClockCreateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<SandboxTransferTestClockCreateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -8856,7 +8856,7 @@ open class PlaidAPI {
      */
     open class func sandboxTransferTestClockGetWithRequestBuilder(sandboxTransferTestClockGetRequest: SandboxTransferTestClockGetRequest) -> RequestBuilder<SandboxTransferTestClockGetResponse> {
         let localVariablePath = "/sandbox/transfer/test_clock/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: sandboxTransferTestClockGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -8867,7 +8867,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<SandboxTransferTestClockGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<SandboxTransferTestClockGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -8905,7 +8905,7 @@ open class PlaidAPI {
      */
     open class func sandboxTransferTestClockListWithRequestBuilder(sandboxTransferTestClockListRequest: SandboxTransferTestClockListRequest) -> RequestBuilder<SandboxTransferTestClockListResponse> {
         let localVariablePath = "/sandbox/transfer/test_clock/list"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: sandboxTransferTestClockListRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -8916,7 +8916,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<SandboxTransferTestClockListResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<SandboxTransferTestClockListResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -8954,7 +8954,7 @@ open class PlaidAPI {
      */
     open class func signalDecisionReportWithRequestBuilder(signalDecisionReportRequest: SignalDecisionReportRequest) -> RequestBuilder<SignalDecisionReportResponse> {
         let localVariablePath = "/signal/decision/report"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: signalDecisionReportRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -8965,7 +8965,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<SignalDecisionReportResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<SignalDecisionReportResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -9003,7 +9003,7 @@ open class PlaidAPI {
      */
     open class func signalEvaluateWithRequestBuilder(signalEvaluateRequest: SignalEvaluateRequest) -> RequestBuilder<SignalEvaluateResponse> {
         let localVariablePath = "/signal/evaluate"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: signalEvaluateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -9014,7 +9014,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<SignalEvaluateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<SignalEvaluateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -9052,7 +9052,7 @@ open class PlaidAPI {
      */
     open class func signalPrepareWithRequestBuilder(signalPrepareRequest: SignalPrepareRequest) -> RequestBuilder<SignalPrepareResponse> {
         let localVariablePath = "/signal/prepare"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: signalPrepareRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -9063,7 +9063,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<SignalPrepareResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<SignalPrepareResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -9101,7 +9101,7 @@ open class PlaidAPI {
      */
     open class func signalReturnReportWithRequestBuilder(signalReturnReportRequest: SignalReturnReportRequest) -> RequestBuilder<SignalReturnReportResponse> {
         let localVariablePath = "/signal/return/report"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: signalReturnReportRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -9112,7 +9112,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<SignalReturnReportResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<SignalReturnReportResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -9150,7 +9150,7 @@ open class PlaidAPI {
      */
     open class func statementsDownloadWithRequestBuilder(statementsDownloadRequest: StatementsDownloadRequest) -> RequestBuilder<URL> {
         let localVariablePath = "/statements/download"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: statementsDownloadRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -9161,7 +9161,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<URL>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<URL>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -9199,7 +9199,7 @@ open class PlaidAPI {
      */
     open class func statementsListWithRequestBuilder(statementsListRequest: StatementsListRequest) -> RequestBuilder<StatementsListResponse> {
         let localVariablePath = "/statements/list"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: statementsListRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -9210,7 +9210,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<StatementsListResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<StatementsListResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -9248,7 +9248,7 @@ open class PlaidAPI {
      */
     open class func statementsRefreshWithRequestBuilder(statementsRefreshRequest: StatementsRefreshRequest) -> RequestBuilder<StatementsRefreshResponse> {
         let localVariablePath = "/statements/refresh"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: statementsRefreshRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -9259,7 +9259,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<StatementsRefreshResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<StatementsRefreshResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -9293,7 +9293,7 @@ open class PlaidAPI {
      */
     open class func transactionsEnhanceWithRequestBuilder(transactionsEnhanceGetRequest: TransactionsEnhanceGetRequest) -> RequestBuilder<TransactionsEnhanceGetResponse> {
         let localVariablePath = "/beta/transactions/v1/enhance"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: transactionsEnhanceGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -9304,7 +9304,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<TransactionsEnhanceGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<TransactionsEnhanceGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -9342,7 +9342,7 @@ open class PlaidAPI {
      */
     open class func transactionsEnrichWithRequestBuilder(transactionsEnrichRequest: TransactionsEnrichRequest) -> RequestBuilder<TransactionsEnrichResponse> {
         let localVariablePath = "/transactions/enrich"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: transactionsEnrichRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -9353,7 +9353,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<TransactionsEnrichResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<TransactionsEnrichResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -9391,7 +9391,7 @@ open class PlaidAPI {
      */
     open class func transactionsGetWithRequestBuilder(transactionsGetRequest: TransactionsGetRequest) -> RequestBuilder<TransactionsGetResponse> {
         let localVariablePath = "/transactions/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: transactionsGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -9402,7 +9402,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<TransactionsGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<TransactionsGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -9440,7 +9440,7 @@ open class PlaidAPI {
      */
     open class func transactionsRecurringGetWithRequestBuilder(transactionsRecurringGetRequest: TransactionsRecurringGetRequest) -> RequestBuilder<TransactionsRecurringGetResponse> {
         let localVariablePath = "/transactions/recurring/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: transactionsRecurringGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -9451,7 +9451,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<TransactionsRecurringGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<TransactionsRecurringGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -9489,7 +9489,7 @@ open class PlaidAPI {
      */
     open class func transactionsRefreshWithRequestBuilder(transactionsRefreshRequest: TransactionsRefreshRequest) -> RequestBuilder<TransactionsRefreshResponse> {
         let localVariablePath = "/transactions/refresh"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: transactionsRefreshRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -9500,7 +9500,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<TransactionsRefreshResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<TransactionsRefreshResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -9534,7 +9534,7 @@ open class PlaidAPI {
      */
     open class func transactionsRulesCreateWithRequestBuilder(transactionsRulesCreateRequest: TransactionsRulesCreateRequest) -> RequestBuilder<TransactionsRulesCreateResponse> {
         let localVariablePath = "/beta/transactions/rules/v1/create"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: transactionsRulesCreateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -9545,7 +9545,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<TransactionsRulesCreateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<TransactionsRulesCreateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -9579,7 +9579,7 @@ open class PlaidAPI {
      */
     open class func transactionsRulesListWithRequestBuilder(transactionsRulesListRequest: TransactionsRulesListRequest) -> RequestBuilder<TransactionsRulesListResponse> {
         let localVariablePath = "/beta/transactions/rules/v1/list"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: transactionsRulesListRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -9590,7 +9590,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<TransactionsRulesListResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<TransactionsRulesListResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -9624,7 +9624,7 @@ open class PlaidAPI {
      */
     open class func transactionsRulesRemoveWithRequestBuilder(transactionsRulesRemoveRequest: TransactionsRulesRemoveRequest) -> RequestBuilder<TransactionsRulesRemoveResponse> {
         let localVariablePath = "/beta/transactions/rules/v1/remove"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: transactionsRulesRemoveRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -9635,7 +9635,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<TransactionsRulesRemoveResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<TransactionsRulesRemoveResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -9673,7 +9673,7 @@ open class PlaidAPI {
      */
     open class func transactionsSyncWithRequestBuilder(transactionsSyncRequest: TransactionsSyncRequest) -> RequestBuilder<TransactionsSyncResponse> {
         let localVariablePath = "/transactions/sync"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: transactionsSyncRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -9684,7 +9684,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<TransactionsSyncResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<TransactionsSyncResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -9722,7 +9722,7 @@ open class PlaidAPI {
      */
     open class func transactionsUserInsightsGetWithRequestBuilder(transactionsUserInsightsGetRequest: TransactionsUserInsightsGetRequest) -> RequestBuilder<TransactionsUserInsightsGetResponse> {
         let localVariablePath = "/beta/transactions/user_insights/v1/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: transactionsUserInsightsGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -9733,7 +9733,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<TransactionsUserInsightsGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<TransactionsUserInsightsGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -9771,7 +9771,7 @@ open class PlaidAPI {
      */
     open class func transferAuthorizationCancelWithRequestBuilder(transferAuthorizationCancelRequest: TransferAuthorizationCancelRequest) -> RequestBuilder<TransferAuthorizationCancelResponse> {
         let localVariablePath = "/transfer/authorization/cancel"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: transferAuthorizationCancelRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -9782,7 +9782,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<TransferAuthorizationCancelResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<TransferAuthorizationCancelResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -9820,7 +9820,7 @@ open class PlaidAPI {
      */
     open class func transferAuthorizationCreateWithRequestBuilder(transferAuthorizationCreateRequest: TransferAuthorizationCreateRequest) -> RequestBuilder<TransferAuthorizationCreateResponse> {
         let localVariablePath = "/transfer/authorization/create"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: transferAuthorizationCreateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -9831,7 +9831,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<TransferAuthorizationCreateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<TransferAuthorizationCreateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -9871,7 +9871,7 @@ open class PlaidAPI {
     @available(*, deprecated, message: "This operation is deprecated.")
     open class func transferBalanceGetWithRequestBuilder(transferBalanceGetRequest: TransferBalanceGetRequest) -> RequestBuilder<TransferBalanceGetResponse> {
         let localVariablePath = "/transfer/balance/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: transferBalanceGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -9882,7 +9882,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<TransferBalanceGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<TransferBalanceGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -9920,7 +9920,7 @@ open class PlaidAPI {
      */
     open class func transferCancelWithRequestBuilder(transferCancelRequest: TransferCancelRequest) -> RequestBuilder<TransferCancelResponse> {
         let localVariablePath = "/transfer/cancel"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: transferCancelRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -9931,7 +9931,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<TransferCancelResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<TransferCancelResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -9969,7 +9969,7 @@ open class PlaidAPI {
      */
     open class func transferCapabilitiesGetWithRequestBuilder(transferCapabilitiesGetRequest: TransferCapabilitiesGetRequest) -> RequestBuilder<TransferCapabilitiesGetResponse> {
         let localVariablePath = "/transfer/capabilities/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: transferCapabilitiesGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -9980,7 +9980,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<TransferCapabilitiesGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<TransferCapabilitiesGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -10018,7 +10018,7 @@ open class PlaidAPI {
      */
     open class func transferConfigurationGetWithRequestBuilder(transferConfigurationGetRequest: TransferConfigurationGetRequest) -> RequestBuilder<TransferConfigurationGetResponse> {
         let localVariablePath = "/transfer/configuration/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: transferConfigurationGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -10029,7 +10029,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<TransferConfigurationGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<TransferConfigurationGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -10067,7 +10067,7 @@ open class PlaidAPI {
      */
     open class func transferCreateWithRequestBuilder(transferCreateRequest: TransferCreateRequest) -> RequestBuilder<TransferCreateResponse> {
         let localVariablePath = "/transfer/create"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: transferCreateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -10078,7 +10078,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<TransferCreateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<TransferCreateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -10116,7 +10116,7 @@ open class PlaidAPI {
      */
     open class func transferDiligenceDocumentUploadWithRequestBuilder(transferDiligenceDocumentUploadRequest: TransferDiligenceDocumentUploadRequest) -> RequestBuilder<TransferDiligenceDocumentUploadResponse> {
         let localVariablePath = "/transfer/diligence/document/upload"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: transferDiligenceDocumentUploadRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -10127,7 +10127,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<TransferDiligenceDocumentUploadResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<TransferDiligenceDocumentUploadResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -10165,7 +10165,7 @@ open class PlaidAPI {
      */
     open class func transferDiligenceSubmitWithRequestBuilder(transferDiligenceSubmitRequest: TransferDiligenceSubmitRequest) -> RequestBuilder<TransferDiligenceSubmitResponse> {
         let localVariablePath = "/transfer/diligence/submit"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: transferDiligenceSubmitRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -10176,7 +10176,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<TransferDiligenceSubmitResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<TransferDiligenceSubmitResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -10214,7 +10214,7 @@ open class PlaidAPI {
      */
     open class func transferEventListWithRequestBuilder(transferEventListRequest: TransferEventListRequest) -> RequestBuilder<TransferEventListResponse> {
         let localVariablePath = "/transfer/event/list"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: transferEventListRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -10225,7 +10225,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<TransferEventListResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<TransferEventListResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -10263,7 +10263,7 @@ open class PlaidAPI {
      */
     open class func transferEventSyncWithRequestBuilder(transferEventSyncRequest: TransferEventSyncRequest) -> RequestBuilder<TransferEventSyncResponse> {
         let localVariablePath = "/transfer/event/sync"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: transferEventSyncRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -10274,7 +10274,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<TransferEventSyncResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<TransferEventSyncResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -10312,7 +10312,7 @@ open class PlaidAPI {
      */
     open class func transferGetWithRequestBuilder(transferGetRequest: TransferGetRequest) -> RequestBuilder<TransferGetResponse> {
         let localVariablePath = "/transfer/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: transferGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -10323,7 +10323,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<TransferGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<TransferGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -10361,7 +10361,7 @@ open class PlaidAPI {
      */
     open class func transferIntentCreateWithRequestBuilder(transferIntentCreateRequest: TransferIntentCreateRequest) -> RequestBuilder<TransferIntentCreateResponse> {
         let localVariablePath = "/transfer/intent/create"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: transferIntentCreateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -10372,7 +10372,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<TransferIntentCreateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<TransferIntentCreateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -10410,7 +10410,7 @@ open class PlaidAPI {
      */
     open class func transferIntentGetWithRequestBuilder(transferIntentGetRequest: TransferIntentGetRequest) -> RequestBuilder<TransferIntentGetResponse> {
         let localVariablePath = "/transfer/intent/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: transferIntentGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -10421,7 +10421,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<TransferIntentGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<TransferIntentGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -10459,7 +10459,7 @@ open class PlaidAPI {
      */
     open class func transferLedgerDepositWithRequestBuilder(transferLedgerDepositRequest: TransferLedgerDepositRequest) -> RequestBuilder<TransferLedgerDepositResponse> {
         let localVariablePath = "/transfer/ledger/deposit"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: transferLedgerDepositRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -10470,7 +10470,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<TransferLedgerDepositResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<TransferLedgerDepositResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -10508,7 +10508,7 @@ open class PlaidAPI {
      */
     open class func transferLedgerDistributeWithRequestBuilder(transferLedgerDistributeRequest: TransferLedgerDistributeRequest) -> RequestBuilder<TransferLedgerDistributeResponse> {
         let localVariablePath = "/transfer/ledger/distribute"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: transferLedgerDistributeRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -10519,7 +10519,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<TransferLedgerDistributeResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<TransferLedgerDistributeResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -10557,7 +10557,7 @@ open class PlaidAPI {
      */
     open class func transferLedgerGetWithRequestBuilder(transferLedgerGetRequest: TransferLedgerGetRequest) -> RequestBuilder<TransferLedgerGetResponse> {
         let localVariablePath = "/transfer/ledger/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: transferLedgerGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -10568,7 +10568,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<TransferLedgerGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<TransferLedgerGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -10606,7 +10606,7 @@ open class PlaidAPI {
      */
     open class func transferLedgerWithdrawWithRequestBuilder(transferLedgerWithdrawRequest: TransferLedgerWithdrawRequest) -> RequestBuilder<TransferLedgerWithdrawResponse> {
         let localVariablePath = "/transfer/ledger/withdraw"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: transferLedgerWithdrawRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -10617,7 +10617,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<TransferLedgerWithdrawResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<TransferLedgerWithdrawResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -10655,7 +10655,7 @@ open class PlaidAPI {
      */
     open class func transferListWithRequestBuilder(transferListRequest: TransferListRequest) -> RequestBuilder<TransferListResponse> {
         let localVariablePath = "/transfer/list"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: transferListRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -10666,7 +10666,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<TransferListResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<TransferListResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -10704,7 +10704,7 @@ open class PlaidAPI {
      */
     open class func transferMetricsGetWithRequestBuilder(transferMetricsGetRequest: TransferMetricsGetRequest) -> RequestBuilder<TransferMetricsGetResponse> {
         let localVariablePath = "/transfer/metrics/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: transferMetricsGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -10715,7 +10715,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<TransferMetricsGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<TransferMetricsGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -10753,7 +10753,7 @@ open class PlaidAPI {
      */
     open class func transferMigrateAccountWithRequestBuilder(transferMigrateAccountRequest: TransferMigrateAccountRequest) -> RequestBuilder<TransferMigrateAccountResponse> {
         let localVariablePath = "/transfer/migrate_account"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: transferMigrateAccountRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -10764,7 +10764,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<TransferMigrateAccountResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<TransferMigrateAccountResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -10802,7 +10802,7 @@ open class PlaidAPI {
      */
     open class func transferOriginatorCreateWithRequestBuilder(transferOriginatorCreateRequest: TransferOriginatorCreateRequest) -> RequestBuilder<TransferOriginatorCreateResponse> {
         let localVariablePath = "/transfer/originator/create"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: transferOriginatorCreateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -10813,7 +10813,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<TransferOriginatorCreateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<TransferOriginatorCreateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -10851,7 +10851,7 @@ open class PlaidAPI {
      */
     open class func transferOriginatorFundingAccountUpdateWithRequestBuilder(transferOriginatorFundingAccountUpdateRequest: TransferOriginatorFundingAccountUpdateRequest) -> RequestBuilder<TransferOriginatorFundingAccountUpdateResponse> {
         let localVariablePath = "/transfer/originator/funding_account/update"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: transferOriginatorFundingAccountUpdateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -10862,7 +10862,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<TransferOriginatorFundingAccountUpdateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<TransferOriginatorFundingAccountUpdateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -10900,7 +10900,7 @@ open class PlaidAPI {
      */
     open class func transferOriginatorGetWithRequestBuilder(transferOriginatorGetRequest: TransferOriginatorGetRequest) -> RequestBuilder<TransferOriginatorGetResponse> {
         let localVariablePath = "/transfer/originator/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: transferOriginatorGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -10911,7 +10911,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<TransferOriginatorGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<TransferOriginatorGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -10949,7 +10949,7 @@ open class PlaidAPI {
      */
     open class func transferOriginatorListWithRequestBuilder(transferOriginatorListRequest: TransferOriginatorListRequest) -> RequestBuilder<TransferOriginatorListResponse> {
         let localVariablePath = "/transfer/originator/list"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: transferOriginatorListRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -10960,7 +10960,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<TransferOriginatorListResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<TransferOriginatorListResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -10998,7 +10998,7 @@ open class PlaidAPI {
      */
     open class func transferQuestionnaireCreateWithRequestBuilder(transferQuestionnaireCreateRequest: TransferQuestionnaireCreateRequest) -> RequestBuilder<TransferQuestionnaireCreateResponse> {
         let localVariablePath = "/transfer/questionnaire/create"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: transferQuestionnaireCreateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -11009,7 +11009,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<TransferQuestionnaireCreateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<TransferQuestionnaireCreateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -11047,7 +11047,7 @@ open class PlaidAPI {
      */
     open class func transferRecurringCancelWithRequestBuilder(transferRecurringCancelRequest: TransferRecurringCancelRequest) -> RequestBuilder<TransferRecurringCancelResponse> {
         let localVariablePath = "/transfer/recurring/cancel"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: transferRecurringCancelRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -11058,7 +11058,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<TransferRecurringCancelResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<TransferRecurringCancelResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -11096,7 +11096,7 @@ open class PlaidAPI {
      */
     open class func transferRecurringCreateWithRequestBuilder(transferRecurringCreateRequest: TransferRecurringCreateRequest) -> RequestBuilder<TransferRecurringCreateResponse> {
         let localVariablePath = "/transfer/recurring/create"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: transferRecurringCreateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -11107,7 +11107,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<TransferRecurringCreateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<TransferRecurringCreateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -11145,7 +11145,7 @@ open class PlaidAPI {
      */
     open class func transferRecurringGetWithRequestBuilder(transferRecurringGetRequest: TransferRecurringGetRequest) -> RequestBuilder<TransferRecurringGetResponse> {
         let localVariablePath = "/transfer/recurring/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: transferRecurringGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -11156,7 +11156,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<TransferRecurringGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<TransferRecurringGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -11194,7 +11194,7 @@ open class PlaidAPI {
      */
     open class func transferRecurringListWithRequestBuilder(transferRecurringListRequest: TransferRecurringListRequest) -> RequestBuilder<TransferRecurringListResponse> {
         let localVariablePath = "/transfer/recurring/list"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: transferRecurringListRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -11205,7 +11205,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<TransferRecurringListResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<TransferRecurringListResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -11243,7 +11243,7 @@ open class PlaidAPI {
      */
     open class func transferRefundCancelWithRequestBuilder(transferRefundCancelRequest: TransferRefundCancelRequest) -> RequestBuilder<TransferRefundCancelResponse> {
         let localVariablePath = "/transfer/refund/cancel"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: transferRefundCancelRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -11254,7 +11254,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<TransferRefundCancelResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<TransferRefundCancelResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -11292,7 +11292,7 @@ open class PlaidAPI {
      */
     open class func transferRefundCreateWithRequestBuilder(transferRefundCreateRequest: TransferRefundCreateRequest) -> RequestBuilder<TransferRefundCreateResponse> {
         let localVariablePath = "/transfer/refund/create"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: transferRefundCreateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -11303,7 +11303,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<TransferRefundCreateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<TransferRefundCreateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -11341,7 +11341,7 @@ open class PlaidAPI {
      */
     open class func transferRefundGetWithRequestBuilder(transferRefundGetRequest: TransferRefundGetRequest) -> RequestBuilder<TransferRefundGetResponse> {
         let localVariablePath = "/transfer/refund/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: transferRefundGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -11352,7 +11352,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<TransferRefundGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<TransferRefundGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -11390,7 +11390,7 @@ open class PlaidAPI {
      */
     open class func transferRepaymentListWithRequestBuilder(transferRepaymentListRequest: TransferRepaymentListRequest) -> RequestBuilder<TransferRepaymentListResponse> {
         let localVariablePath = "/transfer/repayment/list"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: transferRepaymentListRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -11401,7 +11401,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<TransferRepaymentListResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<TransferRepaymentListResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -11439,7 +11439,7 @@ open class PlaidAPI {
      */
     open class func transferRepaymentReturnListWithRequestBuilder(transferRepaymentReturnListRequest: TransferRepaymentReturnListRequest) -> RequestBuilder<TransferRepaymentReturnListResponse> {
         let localVariablePath = "/transfer/repayment/return/list"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: transferRepaymentReturnListRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -11450,7 +11450,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<TransferRepaymentReturnListResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<TransferRepaymentReturnListResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -11488,7 +11488,7 @@ open class PlaidAPI {
      */
     open class func transferSweepGetWithRequestBuilder(transferSweepGetRequest: TransferSweepGetRequest) -> RequestBuilder<TransferSweepGetResponse> {
         let localVariablePath = "/transfer/sweep/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: transferSweepGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -11499,7 +11499,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<TransferSweepGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<TransferSweepGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -11537,7 +11537,7 @@ open class PlaidAPI {
      */
     open class func transferSweepListWithRequestBuilder(transferSweepListRequest: TransferSweepListRequest) -> RequestBuilder<TransferSweepListResponse> {
         let localVariablePath = "/transfer/sweep/list"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: transferSweepListRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -11548,7 +11548,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<TransferSweepListResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<TransferSweepListResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -11586,7 +11586,7 @@ open class PlaidAPI {
      */
     open class func userCreateWithRequestBuilder(userCreateRequest: UserCreateRequest) -> RequestBuilder<UserCreateResponse> {
         let localVariablePath = "/user/create"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: userCreateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -11597,7 +11597,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<UserCreateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<UserCreateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -11635,7 +11635,7 @@ open class PlaidAPI {
      */
     open class func userUpdateWithRequestBuilder(userUpdateRequest: UserUpdateRequest) -> RequestBuilder<UserUpdateResponse> {
         let localVariablePath = "/user/update"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: userUpdateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -11646,7 +11646,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<UserUpdateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<UserUpdateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -11684,7 +11684,7 @@ open class PlaidAPI {
      */
     open class func walletCreateWithRequestBuilder(walletCreateRequest: WalletCreateRequest) -> RequestBuilder<WalletCreateResponse> {
         let localVariablePath = "/wallet/create"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: walletCreateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -11695,7 +11695,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<WalletCreateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<WalletCreateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -11733,7 +11733,7 @@ open class PlaidAPI {
      */
     open class func walletGetWithRequestBuilder(walletGetRequest: WalletGetRequest) -> RequestBuilder<WalletGetResponse> {
         let localVariablePath = "/wallet/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: walletGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -11744,7 +11744,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<WalletGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<WalletGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -11782,7 +11782,7 @@ open class PlaidAPI {
      */
     open class func walletListWithRequestBuilder(walletListRequest: WalletListRequest) -> RequestBuilder<WalletListResponse> {
         let localVariablePath = "/wallet/list"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: walletListRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -11793,7 +11793,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<WalletListResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<WalletListResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -11831,7 +11831,7 @@ open class PlaidAPI {
      */
     open class func walletTransactionExecuteWithRequestBuilder(walletTransactionExecuteRequest: WalletTransactionExecuteRequest) -> RequestBuilder<WalletTransactionExecuteResponse> {
         let localVariablePath = "/wallet/transaction/execute"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: walletTransactionExecuteRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -11842,7 +11842,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<WalletTransactionExecuteResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<WalletTransactionExecuteResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -11880,7 +11880,7 @@ open class PlaidAPI {
      */
     open class func walletTransactionGetWithRequestBuilder(walletTransactionGetRequest: WalletTransactionGetRequest) -> RequestBuilder<WalletTransactionGetResponse> {
         let localVariablePath = "/wallet/transaction/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: walletTransactionGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -11891,7 +11891,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<WalletTransactionGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<WalletTransactionGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -11929,7 +11929,7 @@ open class PlaidAPI {
      */
     open class func walletTransactionListWithRequestBuilder(walletTransactionListRequest: WalletTransactionListRequest) -> RequestBuilder<WalletTransactionListResponse> {
         let localVariablePath = "/wallet/transaction/list"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: walletTransactionListRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -11940,7 +11940,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<WalletTransactionListResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<WalletTransactionListResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -11978,7 +11978,7 @@ open class PlaidAPI {
      */
     open class func watchlistScreeningEntityCreateWithRequestBuilder(watchlistScreeningEntityCreateRequest: WatchlistScreeningEntityCreateRequest) -> RequestBuilder<WatchlistScreeningEntityCreateResponse> {
         let localVariablePath = "/watchlist_screening/entity/create"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: watchlistScreeningEntityCreateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -11989,7 +11989,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<WatchlistScreeningEntityCreateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<WatchlistScreeningEntityCreateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -12027,7 +12027,7 @@ open class PlaidAPI {
      */
     open class func watchlistScreeningEntityGetWithRequestBuilder(watchlistScreeningEntityGetRequest: WatchlistScreeningEntityGetRequest) -> RequestBuilder<WatchlistScreeningEntityGetResponse> {
         let localVariablePath = "/watchlist_screening/entity/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: watchlistScreeningEntityGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -12038,7 +12038,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<WatchlistScreeningEntityGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<WatchlistScreeningEntityGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -12076,7 +12076,7 @@ open class PlaidAPI {
      */
     open class func watchlistScreeningEntityHistoryListWithRequestBuilder(watchlistScreeningEntityHistoryListRequest: WatchlistScreeningEntityHistoryListRequest) -> RequestBuilder<WatchlistScreeningEntityHistoryListResponse> {
         let localVariablePath = "/watchlist_screening/entity/history/list"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: watchlistScreeningEntityHistoryListRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -12087,7 +12087,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<WatchlistScreeningEntityHistoryListResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<WatchlistScreeningEntityHistoryListResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -12125,7 +12125,7 @@ open class PlaidAPI {
      */
     open class func watchlistScreeningEntityHitListWithRequestBuilder(watchlistScreeningEntityHitListRequest: WatchlistScreeningEntityHitListRequest) -> RequestBuilder<WatchlistScreeningEntityHitListResponse> {
         let localVariablePath = "/watchlist_screening/entity/hit/list"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: watchlistScreeningEntityHitListRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -12136,7 +12136,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<WatchlistScreeningEntityHitListResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<WatchlistScreeningEntityHitListResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -12174,7 +12174,7 @@ open class PlaidAPI {
      */
     open class func watchlistScreeningEntityListWithRequestBuilder(watchlistScreeningEntityListRequest: WatchlistScreeningEntityListRequest) -> RequestBuilder<WatchlistScreeningEntityListResponse> {
         let localVariablePath = "/watchlist_screening/entity/list"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: watchlistScreeningEntityListRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -12185,7 +12185,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<WatchlistScreeningEntityListResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<WatchlistScreeningEntityListResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -12223,7 +12223,7 @@ open class PlaidAPI {
      */
     open class func watchlistScreeningEntityProgramGetWithRequestBuilder(watchlistScreeningEntityProgramGetRequest: WatchlistScreeningEntityProgramGetRequest) -> RequestBuilder<WatchlistScreeningEntityProgramGetResponse> {
         let localVariablePath = "/watchlist_screening/entity/program/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: watchlistScreeningEntityProgramGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -12234,7 +12234,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<WatchlistScreeningEntityProgramGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<WatchlistScreeningEntityProgramGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -12272,7 +12272,7 @@ open class PlaidAPI {
      */
     open class func watchlistScreeningEntityProgramListWithRequestBuilder(watchlistScreeningEntityProgramListRequest: WatchlistScreeningEntityProgramListRequest) -> RequestBuilder<WatchlistScreeningEntityProgramListResponse> {
         let localVariablePath = "/watchlist_screening/entity/program/list"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: watchlistScreeningEntityProgramListRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -12283,7 +12283,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<WatchlistScreeningEntityProgramListResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<WatchlistScreeningEntityProgramListResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -12321,7 +12321,7 @@ open class PlaidAPI {
      */
     open class func watchlistScreeningEntityReviewCreateWithRequestBuilder(watchlistScreeningEntityReviewCreateRequest: WatchlistScreeningEntityReviewCreateRequest) -> RequestBuilder<WatchlistScreeningEntityReviewCreateResponse> {
         let localVariablePath = "/watchlist_screening/entity/review/create"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: watchlistScreeningEntityReviewCreateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -12332,7 +12332,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<WatchlistScreeningEntityReviewCreateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<WatchlistScreeningEntityReviewCreateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -12370,7 +12370,7 @@ open class PlaidAPI {
      */
     open class func watchlistScreeningEntityReviewListWithRequestBuilder(watchlistScreeningEntityReviewListRequest: WatchlistScreeningEntityReviewListRequest) -> RequestBuilder<WatchlistScreeningEntityReviewListResponse> {
         let localVariablePath = "/watchlist_screening/entity/review/list"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: watchlistScreeningEntityReviewListRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -12381,7 +12381,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<WatchlistScreeningEntityReviewListResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<WatchlistScreeningEntityReviewListResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -12419,7 +12419,7 @@ open class PlaidAPI {
      */
     open class func watchlistScreeningEntityUpdateWithRequestBuilder(watchlistScreeningEntityUpdateRequest: WatchlistScreeningEntityUpdateRequest) -> RequestBuilder<WatchlistScreeningEntityUpdateResponse> {
         let localVariablePath = "/watchlist_screening/entity/update"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: watchlistScreeningEntityUpdateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -12430,7 +12430,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<WatchlistScreeningEntityUpdateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<WatchlistScreeningEntityUpdateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -12468,7 +12468,7 @@ open class PlaidAPI {
      */
     open class func watchlistScreeningIndividualCreateWithRequestBuilder(watchlistScreeningIndividualCreateRequest: WatchlistScreeningIndividualCreateRequest) -> RequestBuilder<WatchlistScreeningIndividualCreateResponse> {
         let localVariablePath = "/watchlist_screening/individual/create"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: watchlistScreeningIndividualCreateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -12479,7 +12479,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<WatchlistScreeningIndividualCreateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<WatchlistScreeningIndividualCreateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -12517,7 +12517,7 @@ open class PlaidAPI {
      */
     open class func watchlistScreeningIndividualGetWithRequestBuilder(watchlistScreeningIndividualGetRequest: WatchlistScreeningIndividualGetRequest) -> RequestBuilder<WatchlistScreeningIndividualGetResponse> {
         let localVariablePath = "/watchlist_screening/individual/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: watchlistScreeningIndividualGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -12528,7 +12528,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<WatchlistScreeningIndividualGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<WatchlistScreeningIndividualGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -12566,7 +12566,7 @@ open class PlaidAPI {
      */
     open class func watchlistScreeningIndividualHistoryListWithRequestBuilder(watchlistScreeningIndividualHistoryListRequest: WatchlistScreeningIndividualHistoryListRequest) -> RequestBuilder<WatchlistScreeningIndividualHistoryListResponse> {
         let localVariablePath = "/watchlist_screening/individual/history/list"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: watchlistScreeningIndividualHistoryListRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -12577,7 +12577,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<WatchlistScreeningIndividualHistoryListResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<WatchlistScreeningIndividualHistoryListResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -12615,7 +12615,7 @@ open class PlaidAPI {
      */
     open class func watchlistScreeningIndividualHitListWithRequestBuilder(watchlistScreeningIndividualHitListRequest: WatchlistScreeningIndividualHitListRequest) -> RequestBuilder<WatchlistScreeningIndividualHitListResponse> {
         let localVariablePath = "/watchlist_screening/individual/hit/list"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: watchlistScreeningIndividualHitListRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -12626,7 +12626,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<WatchlistScreeningIndividualHitListResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<WatchlistScreeningIndividualHitListResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -12664,7 +12664,7 @@ open class PlaidAPI {
      */
     open class func watchlistScreeningIndividualListWithRequestBuilder(watchlistScreeningIndividualListRequest: WatchlistScreeningIndividualListRequest) -> RequestBuilder<WatchlistScreeningIndividualListResponse> {
         let localVariablePath = "/watchlist_screening/individual/list"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: watchlistScreeningIndividualListRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -12675,7 +12675,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<WatchlistScreeningIndividualListResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<WatchlistScreeningIndividualListResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -12713,7 +12713,7 @@ open class PlaidAPI {
      */
     open class func watchlistScreeningIndividualProgramGetWithRequestBuilder(watchlistScreeningIndividualProgramGetRequest: WatchlistScreeningIndividualProgramGetRequest) -> RequestBuilder<WatchlistScreeningIndividualProgramGetResponse> {
         let localVariablePath = "/watchlist_screening/individual/program/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: watchlistScreeningIndividualProgramGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -12724,7 +12724,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<WatchlistScreeningIndividualProgramGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<WatchlistScreeningIndividualProgramGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -12762,7 +12762,7 @@ open class PlaidAPI {
      */
     open class func watchlistScreeningIndividualProgramListWithRequestBuilder(watchlistScreeningIndividualProgramListRequest: WatchlistScreeningIndividualProgramListRequest) -> RequestBuilder<WatchlistScreeningIndividualProgramListResponse> {
         let localVariablePath = "/watchlist_screening/individual/program/list"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: watchlistScreeningIndividualProgramListRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -12773,7 +12773,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<WatchlistScreeningIndividualProgramListResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<WatchlistScreeningIndividualProgramListResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -12811,7 +12811,7 @@ open class PlaidAPI {
      */
     open class func watchlistScreeningIndividualReviewCreateWithRequestBuilder(watchlistScreeningIndividualReviewCreateRequest: WatchlistScreeningIndividualReviewCreateRequest) -> RequestBuilder<WatchlistScreeningIndividualReviewCreateResponse> {
         let localVariablePath = "/watchlist_screening/individual/review/create"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: watchlistScreeningIndividualReviewCreateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -12822,7 +12822,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<WatchlistScreeningIndividualReviewCreateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<WatchlistScreeningIndividualReviewCreateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -12860,7 +12860,7 @@ open class PlaidAPI {
      */
     open class func watchlistScreeningIndividualReviewListWithRequestBuilder(watchlistScreeningIndividualReviewListRequest: WatchlistScreeningIndividualReviewListRequest) -> RequestBuilder<WatchlistScreeningIndividualReviewListResponse> {
         let localVariablePath = "/watchlist_screening/individual/review/list"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: watchlistScreeningIndividualReviewListRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -12871,7 +12871,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<WatchlistScreeningIndividualReviewListResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<WatchlistScreeningIndividualReviewListResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -12909,7 +12909,7 @@ open class PlaidAPI {
      */
     open class func watchlistScreeningIndividualUpdateWithRequestBuilder(watchlistScreeningIndividualUpdateRequest: WatchlistScreeningIndividualUpdateRequest) -> RequestBuilder<WatchlistScreeningIndividualUpdateResponse> {
         let localVariablePath = "/watchlist_screening/individual/update"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: watchlistScreeningIndividualUpdateRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -12920,7 +12920,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<WatchlistScreeningIndividualUpdateResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<WatchlistScreeningIndividualUpdateResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }
@@ -12958,7 +12958,7 @@ open class PlaidAPI {
      */
     open class func webhookVerificationKeyGetWithRequestBuilder(webhookVerificationKeyGetRequest: WebhookVerificationKeyGetRequest) -> RequestBuilder<WebhookVerificationKeyGetResponse> {
         let localVariablePath = "/webhook_verification_key/get"
-        let localVariableURLString = PlaidAPIAPI.basePath + localVariablePath
+        let localVariableURLString = PlaidAPIConfiguration.basePath + localVariablePath
         let localVariableParameters = JSONEncodingHelper.encodingParameters(forEncodableObject: webhookVerificationKeyGetRequest)
 
         let localVariableUrlComponents = URLComponents(string: localVariableURLString)
@@ -12969,7 +12969,7 @@ open class PlaidAPI {
 
         let localVariableHeaderParameters = APIHelper.rejectNilHeaders(localVariableNillableHeaders)
 
-        let localVariableRequestBuilder: RequestBuilder<WebhookVerificationKeyGetResponse>.Type = PlaidAPIAPI.requestBuilderFactory.getBuilder()
+        let localVariableRequestBuilder: RequestBuilder<WebhookVerificationKeyGetResponse>.Type = PlaidAPIConfiguration.requestBuilderFactory.getBuilder()
 
         return localVariableRequestBuilder.init(method: "POST", URLString: (localVariableUrlComponents?.string ?? localVariableURLString), parameters: localVariableParameters, headers: localVariableHeaderParameters, requiresAuthentication: true)
     }

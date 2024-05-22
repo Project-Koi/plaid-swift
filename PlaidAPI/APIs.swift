@@ -52,7 +52,7 @@ open class RequestBuilder<T> {
         self.headers = headers
         self.requiresAuthentication = requiresAuthentication
 
-        addHeaders(PlaidAPIAPI.customHeaders)
+        addHeaders(PlaidAPIConfiguration.customHeaders)
     }
 
     open func addHeaders(_ aHeaders: [String: String]) {
@@ -62,7 +62,7 @@ open class RequestBuilder<T> {
     }
 
     @discardableResult
-    open func execute(_ apiResponseQueue: DispatchQueue = PlaidAPIAPI.apiResponseQueue, _ completion: @escaping (_ result: Swift.Result<Response<T>, ErrorResponse>) -> Void) -> RequestTask {
+    open func execute(_ apiResponseQueue: DispatchQueue = PlaidAPIConfiguration.apiResponseQueue, _ completion: @escaping (_ result: Swift.Result<Response<T>, ErrorResponse>) -> Void) -> RequestTask {
         return requestTask
     }
 
@@ -99,7 +99,7 @@ open class RequestBuilder<T> {
     }
 
     open func addCredential() -> Self {
-        credential = PlaidAPIAPI.credential
+        credential = PlaidAPIConfiguration.credential
         return self
     }
 }
