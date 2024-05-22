@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **startedAt** | **Date** | The timestamp at which the link session was first started, in [ISO 8601](https://wikipedia.org/wiki/ISO_8601) format. | [optional] 
 **finishedAt** | **Date** | The timestamp at which the link session was finished, if available, in [ISO 8601](https://wikipedia.org/wiki/ISO_8601) format. | [optional] 
 **onSuccess** | [**LinkSessionSuccess**](LinkSessionSuccess.md) |  | [optional] 
-**onExit** | [**LinkSessionExit**](LinkSessionExit.md) |  | [optional] 
+**onExit** | [**LinkSessionExitDeprecated**](LinkSessionExitDeprecated.md) |  | [optional] 
 **exit** | [**LinkSessionExit**](LinkSessionExit.md) |  | [optional] 
 **events** | [LinkEvent] | List of customer-related Link events | [optional] 
 **results** | [**LinkSessionResults**](LinkSessionResults.md) |  | [optional] 

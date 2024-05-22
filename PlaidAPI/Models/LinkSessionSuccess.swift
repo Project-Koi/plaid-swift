@@ -11,6 +11,7 @@ import AnyCodable
 #endif
 
 /** An object representing an [onSuccess](https://plaid.com/docs/link/web/#onsuccess) callback from Link. */
+@available(*, deprecated, message: "This schema is deprecated.")
 public struct LinkSessionSuccess: Codable, JSONEncodable, Hashable {
 
     /** Displayed once a user has successfully linked their Item. */

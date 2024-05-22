@@ -37,7 +37,7 @@ public struct SignalEvaluateRequest: Codable, JSONEncodable, Hashable {
     public var defaultPaymentMethod: String?
     public var user: SignalUser?
     public var device: SignalDevice?
-    /** The key of the risk profile to use for this transaction. A risk profile can be configured using via the Plaid Dashboard. If not provided, no risk profile will be used. This feature is currently in closed beta; to request access, contact your account manager. */
+    /** The key of the risk profile to use for this transaction. You can configure a risk profile using the Signal dashboard located within the Plaid Dashboard. If not provided, no risk profile will be used. This feature is currently in closed beta; to request access, contact your account manager. */
     public var riskProfileKey: String?
 
     public init(clientId: String? = nil, secret: String? = nil, accessToken: String, accountId: String, clientTransactionId: String, amount: Double, userPresent: Bool? = nil, clientUserId: String? = nil, isRecurring: Bool? = nil, defaultPaymentMethod: String? = nil, user: SignalUser? = nil, device: SignalDevice? = nil, riskProfileKey: String? = nil) {

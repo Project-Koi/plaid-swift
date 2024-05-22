@@ -15,7 +15,7 @@ public struct RiskProfile: Codable, JSONEncodable, Hashable {
 
     /** The key of the risk profile used for this transaction. */
     public var key: String?
-    /** The key of the evaluated outcome for this transaction. */
+    /** The evaluated outcome for this transaction. You can configure a list of outcomes, such as \"accept\", \"review\", and \"decline\" using the Signal dashboard located within the Plaid Dashboard. */
     public var outcome: String?
 
     public init(key: String? = nil, outcome: String? = nil) {

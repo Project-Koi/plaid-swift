@@ -19,14 +19,16 @@ public struct LinkTokenGetSessionsResponse: Codable, JSONEncodable, Hashable {
     public var startedAt: Date?
     /** The timestamp at which the link session was finished, if available, in [ISO 8601](https://wikipedia.org/wiki/ISO_8601) format. */
     public var finishedAt: Date?
+    @available(*, deprecated, message: "This property is deprecated.")
     public var onSuccess: LinkSessionSuccess?
-    public var onExit: LinkSessionExit?
+    @available(*, deprecated, message: "This property is deprecated.")
+    public var onExit: LinkSessionExitDeprecated?
     public var exit: LinkSessionExit?
     /** List of customer-related Link events */
     public var events: [LinkEvent]?
     public var results: LinkSessionResults?
 
-    public init(linkSessionId: String, startedAt: Date? = nil, finishedAt: Date? = nil, onSuccess: LinkSessionSuccess? = nil, onExit: LinkSessionExit? = nil, exit: LinkSessionExit? = nil, events: [LinkEvent]? = nil, results: LinkSessionResults? = nil) {
+    public init(linkSessionId: String, startedAt: Date? = nil, finishedAt: Date? = nil, onSuccess: LinkSessionSuccess? = nil, onExit: LinkSessionExitDeprecated? = nil, exit: LinkSessionExit? = nil, events: [LinkEvent]? = nil, results: LinkSessionResults? = nil) {
         self.linkSessionId = linkSessionId
         self.startedAt = startedAt
         self.finishedAt = finishedAt
@@ -88,7 +90,7 @@ public struct LinkTokenGetSessionsResponse: Codable, JSONEncodable, Hashable {
         startedAt = try container.decodeIfPresent(Date.self, forKey: .startedAt)
         finishedAt = try container.decodeIfPresent(Date.self, forKey: .finishedAt)
         onSuccess = try container.decodeIfPresent(LinkSessionSuccess.self, forKey: .onSuccess)
-        onExit = try container.decodeIfPresent(LinkSessionExit.self, forKey: .onExit)
+        onExit = try container.decodeIfPresent(LinkSessionExitDeprecated.self, forKey: .onExit)
         exit = try container.decodeIfPresent(LinkSessionExit.self, forKey: .exit)
         events = try container.decodeIfPresent([LinkEvent].self, forKey: .events)
         results = try container.decodeIfPresent(LinkSessionResults.self, forKey: .results)

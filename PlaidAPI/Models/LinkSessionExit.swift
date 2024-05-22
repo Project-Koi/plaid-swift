@@ -10,7 +10,7 @@ import Foundation
 import AnyCodable
 #endif
 
-/** An object representing an [onExit](https://plaid.com/docs/link/web/#onexit) callback from Link. Note the &#x60;exit&#x60; field on the &#x60;/link/token/get&#x60; response is in beta and may not be populated. */
+/** An object representing an [onExit](https://plaid.com/docs/link/web/#onexit) callback from Link. */
 public struct LinkSessionExit: Codable, JSONEncodable, Hashable {
 
     public var error: PlaidError?

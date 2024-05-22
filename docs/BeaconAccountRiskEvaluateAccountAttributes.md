@@ -30,6 +30,7 @@ Name | Type | Description | Notes
 **emailChangeCount90d** | **Int** | The number of times the account&#39;s email addresses on file have changed over the past 90 days | [optional] 
 **phoneChangeCount90d** | **Int** | The number of times the account&#39;s phone numbers on file have changed over the past 90 days | [optional] 
 **daysSinceAccountOpening** | **Int** | The number of days since the bank account was opened, as reported by the financial institution | [optional] 
+**daysSinceFirstObservedTransaction** | **Int** | The number of days since the oldest transaction available to Plaid for this account. This measure, combined with Plaid connection history, can be used to infer the age of the account | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

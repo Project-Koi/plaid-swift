@@ -45,6 +45,10 @@ Method | HTTP request | Description
 [**consumerReportPdfGet**](PlaidAPI.md#consumerreportpdfget) | **POST** /consumer_report/pdf/get | Retrieve a PDF Reports
 [**craBankIncomeCreate**](PlaidAPI.md#crabankincomecreate) | **POST** /cra/bank_income/create | Create a CRA report for income verification
 [**craBankIncomeGet**](PlaidAPI.md#crabankincomeget) | **POST** /cra/bank_income/get | Retrieve information from the bank accounts used for income verification
+[**craLoansApplicationsRegister**](PlaidAPI.md#craloansapplicationsregister) | **POST** /cra/loans/applications/register | Register loan applications and decisions.
+[**craLoansRegister**](PlaidAPI.md#craloansregister) | **POST** /cra/loans/register | Register a list of loans to their applicants.
+[**craLoansUnregister**](PlaidAPI.md#craloansunregister) | **POST** /cra/loans/unregister | Unregister a list of loans.
+[**craLoansUpdate**](PlaidAPI.md#craloansupdate) | **POST** /cra/loans/update | Updates loan data.
 [**craPartnerInsightsGet**](PlaidAPI.md#crapartnerinsightsget) | **POST** /cra/partner_insights/get | Retrieve cash flow insights from the bank accounts used for income verification
 [**createPaymentToken**](PlaidAPI.md#createpaymenttoken) | **POST** /payment_initiation/payment/token/create | Create payment token
 [**creditAssetReportFreddieMacGet**](PlaidAPI.md#creditassetreportfreddiemacget) | **POST** /credit/asset_report/freddie_mac/get | Retrieve an Asset Report with Freddie Mac format. Only Freddie Mac can use this endpoint.
@@ -2305,6 +2309,206 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**CraBankIncomeGetResponse**](CraBankIncomeGetResponse.md)
+
+### Authorization
+
+[clientId](../README.md#clientId), [plaidVersion](../README.md#plaidVersion), [secret](../README.md#secret)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **craLoansApplicationsRegister**
+```swift
+    open class func craLoansApplicationsRegister(craLoansApplicationsRegisterRequest: CraLoansApplicationsRegisterRequest, completion: @escaping (_ data: CraLoansApplicationsRegisterResponse?, _ error: Error?) -> Void)
+```
+
+Register loan applications and decisions.
+
+`/cra/loans/applications/register` registers loan applications and decisions.
+
+### Example
+```swift
+// The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
+import PlaidAPI
+
+let craLoansApplicationsRegisterRequest = CraLoansApplicationsRegisterRequest(clientId: "clientId_example", secret: "secret_example", applications: [CraLoanApplication(userToken: "userToken_example", applicationId: "applicationId_example", type: CraLoanType(), decision: CraLoanApplicationDecision(), applicationDate: Date(), decisionDate: Date())]) // CraLoansApplicationsRegisterRequest | 
+
+// Register loan applications and decisions.
+PlaidAPI.craLoansApplicationsRegister(craLoansApplicationsRegisterRequest: craLoansApplicationsRegisterRequest) { (response, error) in
+    guard error == nil else {
+        print(error)
+        return
+    }
+
+    if (response) {
+        dump(response)
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **craLoansApplicationsRegisterRequest** | [**CraLoansApplicationsRegisterRequest**](CraLoansApplicationsRegisterRequest.md) |  | 
+
+### Return type
+
+[**CraLoansApplicationsRegisterResponse**](CraLoansApplicationsRegisterResponse.md)
+
+### Authorization
+
+[clientId](../README.md#clientId), [plaidVersion](../README.md#plaidVersion), [secret](../README.md#secret)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **craLoansRegister**
+```swift
+    open class func craLoansRegister(cRALoansRegisterRequest: CRALoansRegisterRequest, completion: @escaping (_ data: CraLoansRegisterResponse?, _ error: Error?) -> Void)
+```
+
+Register a list of loans to their applicants.
+
+`/cra/loans/register` registers a list of loans to their applicants.
+
+### Example
+```swift
+// The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
+import PlaidAPI
+
+let cRALoansRegisterRequest = CRALoansRegisterRequest(clientId: "clientId_example", secret: "secret_example", loans: [CraLoanRegister(userToken: "userToken_example", loanId: "loanId_example", type: CraLoanType(), paymentSchedule: CraLoanPaymentSchedule(), openedDate: Date(), openedWithStatus: CraLoanOpenedStatus(status: CraLoanStatus(), date: Date()), loanAmount: 123, application: CraLoanRegisterApplication(applicationId: "applicationId_example", applicationDate: Date()))]) // CRALoansRegisterRequest | 
+
+// Register a list of loans to their applicants.
+PlaidAPI.craLoansRegister(cRALoansRegisterRequest: cRALoansRegisterRequest) { (response, error) in
+    guard error == nil else {
+        print(error)
+        return
+    }
+
+    if (response) {
+        dump(response)
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **cRALoansRegisterRequest** | [**CRALoansRegisterRequest**](CRALoansRegisterRequest.md) |  | 
+
+### Return type
+
+[**CraLoansRegisterResponse**](CraLoansRegisterResponse.md)
+
+### Authorization
+
+[clientId](../README.md#clientId), [plaidVersion](../README.md#plaidVersion), [secret](../README.md#secret)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **craLoansUnregister**
+```swift
+    open class func craLoansUnregister(craLoansUnregisterRequest: CraLoansUnregisterRequest, completion: @escaping (_ data: CraLoanUnregisterResponse?, _ error: Error?) -> Void)
+```
+
+Unregister a list of loans.
+
+`/cra/loans/unregister` indicates the loans have reached a final status and no further updates are expected.
+
+### Example
+```swift
+// The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
+import PlaidAPI
+
+let craLoansUnregisterRequest = CraLoansUnregisterRequest(clientId: "clientId_example", secret: "secret_example", loans: [CraLoanUnregister(loanId: "loanId_example", closedWithStatus: CraLoanClosedStatus(status: CraLoanStatus(), date: Date()))]) // CraLoansUnregisterRequest | 
+
+// Unregister a list of loans.
+PlaidAPI.craLoansUnregister(craLoansUnregisterRequest: craLoansUnregisterRequest) { (response, error) in
+    guard error == nil else {
+        print(error)
+        return
+    }
+
+    if (response) {
+        dump(response)
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **craLoansUnregisterRequest** | [**CraLoansUnregisterRequest**](CraLoansUnregisterRequest.md) |  | 
+
+### Return type
+
+[**CraLoanUnregisterResponse**](CraLoanUnregisterResponse.md)
+
+### Authorization
+
+[clientId](../README.md#clientId), [plaidVersion](../README.md#plaidVersion), [secret](../README.md#secret)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **craLoansUpdate**
+```swift
+    open class func craLoansUpdate(craLoansUpdateRequest: CraLoansUpdateRequest, completion: @escaping (_ data: CraLoansUpdateResponse?, _ error: Error?) -> Void)
+```
+
+Updates loan data.
+
+`/cra/loans/update` updates loan information such as the status and payment history.
+
+### Example
+```swift
+// The following code samples are still beta. For any issue, please report via http://github.com/OpenAPITools/openapi-generator/issues/new
+import PlaidAPI
+
+let craLoansUpdateRequest = CraLoansUpdateRequest(clientId: "clientId_example", secret: "secret_example", loans: [CraLoanUpdate(loanId: "loanId_example", statusHistory: [CraLoanStatusHistoryUpdate(status: CraLoanStatus(), date: Date())], paymentHistory: [CraLoanPaymentHistory(period: 123, dueDate: Date(), daysPastDue: 123, amountPastDue: 123, balanceRemaining: 123)])]) // CraLoansUpdateRequest | 
+
+// Updates loan data.
+PlaidAPI.craLoansUpdate(craLoansUpdateRequest: craLoansUpdateRequest) { (response, error) in
+    guard error == nil else {
+        print(error)
+        return
+    }
+
+    if (response) {
+        dump(response)
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **craLoansUpdateRequest** | [**CraLoansUpdateRequest**](CraLoansUpdateRequest.md) |  | 
+
+### Return type
+
+[**CraLoansUpdateResponse**](CraLoansUpdateResponse.md)
 
 ### Authorization
 

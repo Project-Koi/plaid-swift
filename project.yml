@@ -7,7 +7,7 @@ targets:
     sources: [PlaidAPI]
     info:
       path: ./Info.plist
-      version: 2020-09-14_1.514.1
+      version: 2020-09-14_1.517.0
     settings:
       APPLICATION_EXTENSION_API_ONLY: true
     scheme: {}

@@ -67,8 +67,10 @@ public struct BeaconAccountRiskEvaluateAccountAttributes: Codable, JSONEncodable
     public var phoneChangeCount90d: Int?
     /** The number of days since the bank account was opened, as reported by the financial institution */
     public var daysSinceAccountOpening: Int?
+    /** The number of days since the oldest transaction available to Plaid for this account. This measure, combined with Plaid connection history, can be used to infer the age of the account */
+    public var daysSinceFirstObservedTransaction: Int?
 
-    public init(daysSinceFirstPlaidConnection: Int? = nil, isAccountClosed: Bool? = nil, isAccountFrozenOrRestricted: Bool? = nil, totalPlaidConnectionsCount: Int? = nil, plaidConnectionsCount7d: Int? = nil, plaidConnectionsCount30d: Int? = nil, failedPlaidNonOauthAuthenticationAttemptsCount3d: Int? = nil, plaidNonOauthAuthenticationAttemptsCount3d: Int? = nil, failedPlaidNonOauthAuthenticationAttemptsCount7d: Int? = nil, plaidNonOauthAuthenticationAttemptsCount7d: Int? = nil, failedPlaidNonOauthAuthenticationAttemptsCount30d: Int? = nil, plaidNonOauthAuthenticationAttemptsCount30d: Int? = nil, distinctIpAddressesCount3d: Int? = nil, distinctIpAddressesCount7d: Int? = nil, distinctIpAddressesCount30d: Int? = nil, distinctIpAddressesCount90d: Int? = nil, distinctUserAgentsCount3d: Int? = nil, distinctUserAgentsCount7d: Int? = nil, distinctUserAgentsCount30d: Int? = nil, distinctUserAgentsCount90d: Int? = nil, addressChangeCount28d: Int? = nil, emailChangeCount28d: Int? = nil, phoneChangeCount28d: Int? = nil, addressChangeCount90d: Int? = nil, emailChangeCount90d: Int? = nil, phoneChangeCount90d: Int? = nil, daysSinceAccountOpening: Int? = nil) {
+    public init(daysSinceFirstPlaidConnection: Int? = nil, isAccountClosed: Bool? = nil, isAccountFrozenOrRestricted: Bool? = nil, totalPlaidConnectionsCount: Int? = nil, plaidConnectionsCount7d: Int? = nil, plaidConnectionsCount30d: Int? = nil, failedPlaidNonOauthAuthenticationAttemptsCount3d: Int? = nil, plaidNonOauthAuthenticationAttemptsCount3d: Int? = nil, failedPlaidNonOauthAuthenticationAttemptsCount7d: Int? = nil, plaidNonOauthAuthenticationAttemptsCount7d: Int? = nil, failedPlaidNonOauthAuthenticationAttemptsCount30d: Int? = nil, plaidNonOauthAuthenticationAttemptsCount30d: Int? = nil, distinctIpAddressesCount3d: Int? = nil, distinctIpAddressesCount7d: Int? = nil, distinctIpAddressesCount30d: Int? = nil, distinctIpAddressesCount90d: Int? = nil, distinctUserAgentsCount3d: Int? = nil, distinctUserAgentsCount7d: Int? = nil, distinctUserAgentsCount30d: Int? = nil, distinctUserAgentsCount90d: Int? = nil, addressChangeCount28d: Int? = nil, emailChangeCount28d: Int? = nil, phoneChangeCount28d: Int? = nil, addressChangeCount90d: Int? = nil, emailChangeCount90d: Int? = nil, phoneChangeCount90d: Int? = nil, daysSinceAccountOpening: Int? = nil, daysSinceFirstObservedTransaction: Int? = nil) {
         self.daysSinceFirstPlaidConnection = daysSinceFirstPlaidConnection
         self.isAccountClosed = isAccountClosed
         self.isAccountFrozenOrRestricted = isAccountFrozenOrRestricted
@@ -96,6 +98,7 @@ public struct BeaconAccountRiskEvaluateAccountAttributes: Codable, JSONEncodable
         self.emailChangeCount90d = emailChangeCount90d
         self.phoneChangeCount90d = phoneChangeCount90d
         self.daysSinceAccountOpening = daysSinceAccountOpening
+        self.daysSinceFirstObservedTransaction = daysSinceFirstObservedTransaction
     }
 
     public enum CodingKeys: String, CodingKey, CaseIterable {
@@ -126,6 +129,7 @@ public struct BeaconAccountRiskEvaluateAccountAttributes: Codable, JSONEncodable
         case emailChangeCount90d = "email_change_count_90d"
         case phoneChangeCount90d = "phone_change_count_90d"
         case daysSinceAccountOpening = "days_since_account_opening"
+        case daysSinceFirstObservedTransaction = "days_since_first_observed_transaction"
     }
 
     // Encodable protocol methods
@@ -159,6 +163,7 @@ public struct BeaconAccountRiskEvaluateAccountAttributes: Codable, JSONEncodable
         try container.encodeIfPresent(emailChangeCount90d, forKey: .emailChangeCount90d)
         try container.encodeIfPresent(phoneChangeCount90d, forKey: .phoneChangeCount90d)
         try container.encodeIfPresent(daysSinceAccountOpening, forKey: .daysSinceAccountOpening)
+        try container.encodeIfPresent(daysSinceFirstObservedTransaction, forKey: .daysSinceFirstObservedTransaction)
     }
 }
 

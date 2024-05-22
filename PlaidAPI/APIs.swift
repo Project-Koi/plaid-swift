@@ -8,24 +8,7 @@ import Foundation
 #if canImport(FoundationNetworking)
 import FoundationNetworking
 #endif
-
-/// The base URL for the different Plaid environments.
-///
-/// ```swift
-/// PlaidAPIConfiguration.basePath = PlaidEnvironments.sandbox.rawValue
-/// ```
-///
-/// - sandbox: The Plaid sandbox environment.
-/// - development: The Plaid development environment.
-/// - production: The Plaid production environment.
-///
-public enum PlaidEnvironments: String {
-    case sandbox = "https://sandbox.plaid.com"
-    case development = "https://development.plaid.com"
-    case production = "https://production.plaid.com"
-}
-
-open class PlaidAPIConfiguration {
+open class PlaidAPIAPI {
     public static var basePath = "https://production.plaid.com"
     public static var customHeaders: [String: String] = [:]
     public static var credential: URLCredential?
@@ -52,7 +35,7 @@ open class RequestBuilder<T> {
         self.headers = headers
         self.requiresAuthentication = requiresAuthentication
 
-        addHeaders(PlaidAPIConfiguration.customHeaders)
+        addHeaders(PlaidAPIAPI.customHeaders)
     }
 
     open func addHeaders(_ aHeaders: [String: String]) {
@@ -62,7 +45,7 @@ open class RequestBuilder<T> {
     }
 
     @discardableResult
-    open func execute(_ apiResponseQueue: DispatchQueue = PlaidAPIConfiguration.apiResponseQueue, _ completion: @escaping (_ result: Swift.Result<Response<T>, ErrorResponse>) -> Void) -> RequestTask {
+    open func execute(_ apiResponseQueue: DispatchQueue = PlaidAPIAPI.apiResponseQueue, _ completion: @escaping (_ result: Swift.Result<Response<T>, ErrorResponse>) -> Void) -> RequestTask {
         return requestTask
     }
 
@@ -90,7 +73,7 @@ open class RequestBuilder<T> {
             self.requestTask.cancel()
         }
     }
-
+    
     public func addHeader(name: String, value: String) -> Self {
         if !value.isEmpty {
             headers[name] = value
@@ -99,7 +82,7 @@ open class RequestBuilder<T> {
     }
 
     open func addCredential() -> Self {
-        credential = PlaidAPIConfiguration.credential
+        credential = PlaidAPIAPI.credential
         return self
     }
 }

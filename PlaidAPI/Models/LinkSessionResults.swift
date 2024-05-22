@@ -14,31 +14,23 @@ import AnyCodable
 public struct LinkSessionResults: Codable, JSONEncodable, Hashable {
 
     /** The set of Item adds for the Link session. */
-    public var itemAddResults: [LinkSessionItemAddResult]
-    /** The set of CRA Item adds for the Link session. */
-    public var craItemAddResults: [LinkSessionCRAItemAddResult]
+    public var itemAddResults: [LinkSessionItemAddResult]?
     /** The set of bank income verifications for the Link session. */
-    public var bankIncomeResults: [LinkSessionBankIncomeResult]
-    /** The set of bank employment verifications for the Link session. */
-    public var bankEmploymentResults: [LinkSessionBankEmploymentResult]
+    public var bankIncomeResults: [LinkSessionBankIncomeResult]?
     /** The set of payroll income verifications for the Link session. */
-    public var payrollIncomeResults: [LinkSessionPayrollIncomeResult]
+    public var payrollIncomeResults: [LinkSessionPayrollIncomeResult]?
     public var documentIncomeResults: CreditSessionDocumentIncomeResult?
 
-    public init(itemAddResults: [LinkSessionItemAddResult], craItemAddResults: [LinkSessionCRAItemAddResult], bankIncomeResults: [LinkSessionBankIncomeResult], bankEmploymentResults: [LinkSessionBankEmploymentResult], payrollIncomeResults: [LinkSessionPayrollIncomeResult], documentIncomeResults: CreditSessionDocumentIncomeResult?) {
+    public init(itemAddResults: [LinkSessionItemAddResult]? = nil, bankIncomeResults: [LinkSessionBankIncomeResult]? = nil, payrollIncomeResults: [LinkSessionPayrollIncomeResult]? = nil, documentIncomeResults: CreditSessionDocumentIncomeResult? = nil) {
         self.itemAddResults = itemAddResults
-        self.craItemAddResults = craItemAddResults
         self.bankIncomeResults = bankIncomeResults
-        self.bankEmploymentResults = bankEmploymentResults
         self.payrollIncomeResults = payrollIncomeResults
         self.documentIncomeResults = documentIncomeResults
     }
 
     public enum CodingKeys: String, CodingKey, CaseIterable {
         case itemAddResults = "item_add_results"
-        case craItemAddResults = "cra_item_add_results"
         case bankIncomeResults = "bank_income_results"
-        case bankEmploymentResults = "bank_employment_results"
         case payrollIncomeResults = "payroll_income_results"
         case documentIncomeResults = "document_income_results"
     }
@@ -62,12 +54,10 @@ public struct LinkSessionResults: Codable, JSONEncodable, Hashable {
 
     public func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
-        try container.encode(itemAddResults, forKey: .itemAddResults)
-        try container.encode(craItemAddResults, forKey: .craItemAddResults)
-        try container.encode(bankIncomeResults, forKey: .bankIncomeResults)
-        try container.encode(bankEmploymentResults, forKey: .bankEmploymentResults)
-        try container.encode(payrollIncomeResults, forKey: .payrollIncomeResults)
-        try container.encode(documentIncomeResults, forKey: .documentIncomeResults)
+        try container.encodeIfPresent(itemAddResults, forKey: .itemAddResults)
+        try container.encodeIfPresent(bankIncomeResults, forKey: .bankIncomeResults)
+        try container.encodeIfPresent(payrollIncomeResults, forKey: .payrollIncomeResults)
+        try container.encodeIfPresent(documentIncomeResults, forKey: .documentIncomeResults)
         var additionalPropertiesContainer = encoder.container(keyedBy: String.self)
         try additionalPropertiesContainer.encodeMap(additionalProperties)
     }
@@ -77,17 +67,13 @@ public struct LinkSessionResults: Codable, JSONEncodable, Hashable {
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
 
-        itemAddResults = try container.decode([LinkSessionItemAddResult].self, forKey: .itemAddResults)
-        craItemAddResults = try container.decode([LinkSessionCRAItemAddResult].self, forKey: .craItemAddResults)
-        bankIncomeResults = try container.decode([LinkSessionBankIncomeResult].self, forKey: .bankIncomeResults)
-        bankEmploymentResults = try container.decode([LinkSessionBankEmploymentResult].self, forKey: .bankEmploymentResults)
-        payrollIncomeResults = try container.decode([LinkSessionPayrollIncomeResult].self, forKey: .payrollIncomeResults)
+        itemAddResults = try container.decodeIfPresent([LinkSessionItemAddResult].self, forKey: .itemAddResults)
+        bankIncomeResults = try container.decodeIfPresent([LinkSessionBankIncomeResult].self, forKey: .bankIncomeResults)
+        payrollIncomeResults = try container.decodeIfPresent([LinkSessionPayrollIncomeResult].self, forKey: .payrollIncomeResults)
         documentIncomeResults = try container.decodeIfPresent(CreditSessionDocumentIncomeResult.self, forKey: .documentIncomeResults)
         var nonAdditionalPropertyKeys = Set<String>()
         nonAdditionalPropertyKeys.insert("item_add_results")
-        nonAdditionalPropertyKeys.insert("cra_item_add_results")
         nonAdditionalPropertyKeys.insert("bank_income_results")
-        nonAdditionalPropertyKeys.insert("bank_employment_results")
         nonAdditionalPropertyKeys.insert("payroll_income_results")
         nonAdditionalPropertyKeys.insert("document_income_results")
         let additionalPropertiesContainer = try decoder.container(keyedBy: String.self)
