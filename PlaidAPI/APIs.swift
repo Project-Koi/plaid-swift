@@ -8,6 +8,23 @@ import Foundation
 #if canImport(FoundationNetworking)
 import FoundationNetworking
 #endif
+
+/// The base URL for the different Plaid environments.
+///
+/// ```swift
+/// PlaidAPIConfiguration.basePath = PlaidEnvironments.sandbox.rawValue
+/// ```
+///
+/// - sandbox: The Plaid sandbox environment.
+/// - development: The Plaid development environment.
+/// - production: The Plaid production environment.
+///
+public enum PlaidEnvironments: String {
+    case sandbox = "https://sandbox.plaid.com"
+    case development = "https://development.plaid.com"
+    case production = "https://production.plaid.com"
+}
+
 open class PlaidAPIAPI {
     public static var basePath = "https://production.plaid.com"
     public static var customHeaders: [String: String] = [:]
