@@ -25,7 +25,7 @@ public enum PlaidEnvironments: String {
     case production = "https://production.plaid.com"
 }
 
-open class PlaidAPIAPI {
+open class PlaidAPIConfiguration {
     public static var basePath = "https://production.plaid.com"
     public static var customHeaders: [String: String] = [:]
     public static var credential: URLCredential?
