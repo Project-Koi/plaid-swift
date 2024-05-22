@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = '10.13'
   s.tvos.deployment_target = '11.0'
   s.watchos.deployment_target = '4.0'
-  s.version = '0.5'
+  s.version = '0.6'
   s.homepage = 'https://github.com/Project-Koi/plaid-swift'
   s.source = { :git => 'https://github.com/Project-Koi/plaid-swift', :tag => s.version }
   s.authors = 'Koi Team'
